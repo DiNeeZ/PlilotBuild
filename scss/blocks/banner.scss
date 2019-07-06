@@ -6,8 +6,10 @@
     height: 100vh;
 }
 
-.banner-info {
-    padding-top: 37%;
+.wrap-banner {
+    display: flex;
+    align-items: center;
+    height: 100%;
 }
 
 .banner-title p{
