@@ -7,13 +7,18 @@ footer.footer
                 ul.social-links
                     li
                         a(href="#")
-                            +svg('facebook', 8, 16.8, true)
+                            .svg-bg
+                                +svg('facebook', 8, 16.8, true)
                     li
                         a(href="#")
-                            +svg('twitter', 18, 14, true)
+                            .svg-bg
+                                +svg('twitter', 18, 14, true)
+                                .svg-bg-hover
+                                    +svg('twitterHover', 32, 32)
                     li
                         a(href="#")
-                            +svg('instagram', 18, 18, true)
+                            .svg-bg
+                                +svg('instagram', 18, 18, true)
             .footer-links_1
                 ul
                     li
