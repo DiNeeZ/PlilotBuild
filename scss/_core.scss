@@ -4,3 +4,18 @@ body {
     font-size: 14px;
     color: #5f5f5f;
 }
+
+ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+    color: #000000;
+    font-size: 14px;
+    &:hover {
+        color: #0019ff;
+    }
+}

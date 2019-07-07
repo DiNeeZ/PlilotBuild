@@ -1,5 +1,6 @@
 .footer {
   height: 317px;
+  padding-top: 60px;
   background-color: #d9eeec;
 }
 
@@ -9,8 +10,6 @@
 }
 
 .footer-social {
-  width: 136px;
-	margin-right: 244px;
   p {
     margin: 40px 0 0 0;
     font-size: 15px;
@@ -21,14 +20,12 @@
 
   .social-links {
     display: flex;
-    justify-content: space-between;
-    list-style: none;
-    margin: 30px 0 0 0;
-    padding-inline-start: 0;
+    margin-top: 30px;
     a {
       display: block;
       width: 32px;
       height: 32px;
+      margin-right: 20px;
       font-size: 17px;
       color: #5F5F5F;
       text-align: center;
@@ -63,20 +60,15 @@
   }
 }
 
-.footer-links_1 ul,
-.footer-links_2 ul {
-  list-style: none;
-  margin: 0;
-  padding: 0;
+.footer-links_1,
+.footer-links_2 {
   li {
     margin-bottom: 15px;
+    a {
+      line-height: 1.14;
+    }
   }
-  a {
-    text-decoration: none;
-    font-size: 14px;
-    line-height: 1.14;
-    color: #000000;
-  }
+  
 }
 
 .footer-links_1 {
@@ -90,5 +82,20 @@
 .footer-links_2 {
   li:last-child {
     margin-bottom: 0;
+  }
+}
+
+.footer-app-links {
+  ul{
+    li:first-child {
+      margin-bottom: 22px;
+    }
+  }
+}
+
+.copyright {
+  p {
+    margin-top: 40px;
+    color: #000000;
   }
 }
