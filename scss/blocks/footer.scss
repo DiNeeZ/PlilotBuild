@@ -25,13 +25,14 @@
       display: block;
       width: 32px;
       height: 32px;
-      margin-right: 20px;
+      margin-right: 1.5rem;
       font-size: 17px;
       color: #5F5F5F;
       text-align: center;
       border: 1px solid #5F5F5F;
       border-radius: 50%;
-      transition: all 0.3s ease;
+      transition: all 0.15s linear;
+      box-sizing: inherit;
       &.facebook-link:hover {
         background-color: #455890;
         color: #ffffff;
@@ -43,7 +44,7 @@
         border-color: #1DA1F2;
       }
       &.instagram-link:hover {
-        background: radial-gradient(circle at 33% 100%, #FED373 4%, #F15245 30%, #D92E7F 62%, #9B36B7 85%, #515ECF);
+        background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285aeb 90%);
         color: #ffffff;
         border-color: transparent;
       }

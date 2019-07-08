@@ -1,0 +1,23 @@
+.cities {
+    margin: 43px 0 114px 0;
+}
+
+.cities-title {
+    margin: 0 0 60px 0;
+    font-weight: 500;
+    font-size: 42px;
+    line-height: 1.17;
+    color: #000000;
+}
+
+.cities-list {
+    li{
+        &:not(:last-child) {
+            margin-bottom: 20px;
+        }
+        a {
+            font-size: 20px;
+            
+        }
+    }
+}
