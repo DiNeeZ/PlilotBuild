@@ -1,5 +1,5 @@
 mixin svg(name, w, h, cls) 
-    - let spritePath = 'img/symbol/sprite.svg'
+    - let spritePath = 'img/sprite.svg'
     if cls
         svg(class=name xmlns="http://www.w3.org/2000/svg" width= w height= h)&attributes(attributes)
             use(xlink:href= spritePath + '#' + name)

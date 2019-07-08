@@ -125,7 +125,7 @@ gulp.task('svg', function () {
         .pipe(svgSprite({
             mode: {
                 symbol: {
-                    sprite: 'sprite.svg'
+                    sprite: '../sprite.svg'
                 }
             }
         }))
