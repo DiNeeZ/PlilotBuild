@@ -1,0 +1,51 @@
+.apps {
+   margin-bottom: 108px; 
+}
+
+.apps-wrap {
+    display: flex;
+    position: relative;
+    height: 562px;
+    background-color: #F2F3F5;
+}
+
+.apps-bg {
+    position: absolute;
+    right: 0;
+    object-fit: cover;
+    height: 100%;
+}
+
+.description-apps {
+    position: relative;
+    max-width: 45%;
+    height: 100%;
+}
+
+.apps-title {
+    margin: 58px 0 31px 0;
+    font-size: 42px;
+    font-weight: 500;
+    line-height: 1.17;
+    color: #000000;
+}
+
+.apps-text {
+    color: #000000;
+    line-height: 1.64;
+}
+
+.apps-links {
+    position: absolute;
+    left: 0;
+    bottom: -11px;
+    display: flex;
+    align-items: center;
+    li:first-child {
+        margin-bottom: 21px;
+    }
+}
+
+.mobile-links {
+    margin-right: 15px;
+}
