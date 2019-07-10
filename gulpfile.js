@@ -88,10 +88,10 @@ gulp.task('images', function () {
                 speed: 1,
                 quality: [0.95, 1] //lossy settings
             }),
-            imageminZopfli({
-                more: true
-                // iterations: 50 // very slow but more effective
-            }),
+            // imageminZopfli({
+            //     more: true,
+            //     iterations: 50 // very slow but more effective
+            // }),
             imageminGiflossy({
                 optimizationLevel: 3,
                 optimize: 3, //keep-empty: Preserve empty transparent frames
@@ -99,7 +99,7 @@ gulp.task('images', function () {
             }),
             //jpg
             imageminMozjpeg({
-                quality: 65
+                quality: 80
             })
         ])))
         .pipe(gulp.dest('build/img'));

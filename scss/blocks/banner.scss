@@ -1,9 +1,12 @@
 .banner {
-    background-image: url('../img/bg-header.jpg');
     background-repeat: no-repeat;
     background-size: cover;
-    background-position: center right;
-    height: 100vh;
+    background-position: top right;
+    height: 80vh;
+}
+
+.pizza {
+    background-image: url('../img/bg-header.jpg');
 }
 
 .wrap-banner {
