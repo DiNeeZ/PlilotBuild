@@ -50,7 +50,8 @@ block content
     section.apps
             .apps-wrap
                 .container
-                    img.apps-bg(src="img/app-img.png", alt="")  
+                    .wrap-apps-bg
+                        img.apps-bg(src="img/app-img.png", alt="")  
                     .description-apps
                         h2.apps-title Дорогая, мы не готовим сегодня вечером
                         p.apps-text Разместите приложение Wolt, награжденное Apple, на главном экране, и вы сможете выбрать из более 5000 ресторанов в более чем 40 городах по всей Европе. Откройте для себя лучшие блюда вокруг вас, принесенные вам.
@@ -62,7 +63,7 @@ block content
                                             +svg('app-ios', 119.66, 42.95)
                                     li
                                         a(href="")
-                                            +svg('app-android', 118, 37.58)
+                                            img(src="img/app-android.png", alt="Скачать android приложение")
                             .qr-code
                                 img(src="img/qr-code.png", alt="")
                                       
