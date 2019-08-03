@@ -1,0 +1,30 @@
+.city-banner {
+    margin-top: 74px;
+}
+
+.current-location-wrapper {
+    position: relative;
+    svg {
+        position: absolute;
+        left: 0;
+        top: 18px;
+    }
+}
+
+.current-location {
+    padding:22px 0 22px 25px;
+    background-color: transparent;
+    border-color: transparent;
+    &:focus {
+        outline: none;
+    }
+    &::placeholder {    
+        color: #5F5F5F;
+    }
+}
+
+.rest {
+    max-height: 320px;
+    background-color: #C9C9C9;
+    background-image: url('../img/bg-texture-light.png');
+}

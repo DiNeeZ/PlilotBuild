@@ -1,0 +1,11 @@
+extends ../layout/main
+
+block content
+    section.city-banner
+        .container
+            .current-location-wrapper
+                +svg('current', 16, 24)
+                input(class="current-location" type="text" placeholder="Дерибасовская")
+            .rest
+                img(class="rest-img" src="img/rest-img.jpg", alt="")
+            
