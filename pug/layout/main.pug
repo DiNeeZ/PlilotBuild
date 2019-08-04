@@ -7,11 +7,17 @@ html(lang="en")
         meta(name="viewport", content="width=device-width, initial-scale=1.0")
         meta(http-equiv="X-UA-Compatible", content="ie=edge")
         title= pageTitle
-        link(rel="stylesheet", href="css/all.css")
-        link(rel="stylesheet", href="css/normalize.css")
-        link(rel="stylesheet", href="css/bootstrap-grid.min.css")
+        link(rel="stylesheet", href="libs/all.css")
+        link(rel="stylesheet", href="libs/normalize/normalize.css")
+        link(rel="stylesheet", href="libs/bootstrap/bootstrap-grid.min.css")
+        link(rel="stylesheet", href="libs/slick/slick.css")
+        link(rel="stylesheet", href="libs/slick/slick-theme.css")
         link(rel="stylesheet", href="css/styles.css")    
     body
         include ../modules/header
         block content
         include ../modules/footer
+
+        script(src="libs/jquery/jquery-3.4.1.min.js")
+        script(src="libs/slick/slick.min.js")
+        script(src="js/main.js")

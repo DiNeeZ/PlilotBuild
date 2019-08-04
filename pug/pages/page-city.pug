@@ -6,6 +6,32 @@ block content
             .current-location-wrapper
                 +svg('current', 16, 24)
                 input(class="current-location" type="text" placeholder="Дерибасовская")
-            .rest
-                img(class="rest-img" src="img/rest-img.jpg", alt="")
-            
+            .slider-container
+                .city-page-slider
+                    .slider-element
+                        .rest
+                            img(class="rest-img" src="img/rest-img.jpg", alt="")
+                            .rest-about
+                                .rest-title McDonalds
+                                a(class="delivery-rules" href="#") Правила доставки
+                                a(class="more-btn" href="#") Подробнее
+                    .slider-element
+                        .rest
+                            img(class="rest-img" src="img/rest-img.jpg", alt="")
+                            .rest-about
+                                .rest-title McDonalds
+                                a(class="delivery-rules" href="#") Правила доставки
+                                a(class="more-btn" href="#") Подробнее
+                    .slider-element
+                        .rest
+                            img(class="rest-img" src="img/rest-img.jpg", alt="")
+                            .rest-about
+                                .rest-title McDonalds
+                                a(class="delivery-rules" href="#") Правила доставки
+                                a(class="more-btn" href="#") Подробнее            
+                .nav-prev
+                    button
+                        i.fas.fa-chevron-left
+                .nav-next
+                    button
+                        i.fas.fa-chevron-right
