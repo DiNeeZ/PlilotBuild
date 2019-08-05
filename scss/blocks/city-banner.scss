@@ -1,0 +1,196 @@
+.city-banner {
+    margin-top: 74px;
+}
+
+.current-location-wrapper {
+    position: relative;
+    svg {
+        position: absolute;
+        left: 0;
+        top: 18px;
+    }
+}
+
+.current-location {
+    padding:22px 0 22px 25px;
+    background-color: transparent;
+    border-color: transparent;
+    &:focus {
+        outline: none;
+    }
+    &::placeholder {    
+        color: #5F5F5F;
+    }
+}
+
+// SLIDER BANNER
+
+.rest {
+    display: flex;
+    flex-direction: row;
+    justify-content: baseline;
+    img {
+        border-radius: 5px 0 0 5px;
+    }
+}
+
+.rest-about {
+    width: 100%;
+    padding: 78px 0 0 95px;
+    background-color: #C9C9C9;
+    background-image: url('../img/bg-texture-light.png');
+    border-radius: 0 5px 5px 0;
+    .rest-title {
+        margin: 0;
+        color: #000000;
+        font-size: 42px;
+        line-height: 1.17;
+        font-weight: 700;
+    }
+    a {
+        display: flex;
+        flex-direction: column;
+    }
+    .delivery-rules {
+        margin: 20px 0 30px 0;
+        font-size: 18px;
+    }
+    .more-btn {
+        display: inline-block;
+        padding: 13px 20px;
+        background-color: #5DBEB7;
+        border-radius: 4px;
+        color: #fff;
+        font-size: 16px;
+        &:hover {
+            background-color: lighten(#5DBEB7, 10%);
+        }
+    }
+
+}
+
+/* DOTS */
+
+.vertical-dots
+{
+    box-sizing: border-box;
+    right:10px;
+    list-style: none;
+    display: block;
+    position: absolute;
+    top: 40%;
+    margin-top: -10px;
+    text-align: right;
+}
+.vertical-dots li
+{
+    position: relative;
+    width: 10px;
+    height: 10px;
+    cursor: pointer;
+    margin-bottom: 6px;
+}
+.vertical-dots li button
+{
+    font-size: 0;
+    line-height: 0;
+    display: block;
+    width: 10px;
+    height: 10px;
+    padding: 5px;
+    cursor: pointer;
+    color: transparent;
+    border: 0;
+    outline: none;
+    background: transparent;
+}
+.vertical-dots li button:hover,
+.vertical-dots li button:focus
+{
+    outline: none;
+}
+.vertical-dots li button:hover:before,
+.vertical-dots li button:focus:before
+{
+    opacity: 1;
+}
+.vertical-dots li button:before
+{
+    font-family: 'slick';
+    font-size: 10px;
+    line-height: 10px;
+
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    width: 10px;
+    height: 10px;
+
+    content: '•';
+    text-align: center;
+
+    color: transparent;
+    border: 1px solid #3ECA28;
+    border-radius: 50%;
+
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+.vertical-dots li.slick-active button:before
+{
+    /* color: #3ECA28; */
+    background-color: #3ECA28;
+}
+
+// END DOTS
+
+/* ARROWS */
+
+.slider-container {
+    position: relative;
+}
+
+.nav-prev, .nav-next {
+    position: absolute;
+}
+
+.arrow {
+	position: absolute;
+	top: 50%;
+	width: 4vmin;
+	height: 4vmin;
+	background: transparent;
+	border-top: 0.5vmin solid #5F5F5F;
+	border-right: 0.5vmin solid #5F5F5F;
+	box-shadow: 0 0 0 lightgray;
+    transition: all 200ms ease;
+    &:hover {
+        cursor: pointer;
+        border-color: lighten(#5F5F5F, 15%);
+    }
+	
+	&.left {
+		left: 0;
+		transform: translate3d(0,-50%,0) rotate(-135deg);
+	}
+
+	&.right {
+		right: 0;
+		transform: translate3d(0,-50%,0) rotate(45deg);
+    }
+}
+
+.nav-prev {
+    top: 50%;
+    left: -40px;
+    transform: translate(-50%, -50%);
+}
+
+
+.nav-next {
+    top: 50%;
+    right: -35px;
+    transform: translate(-50%, -50%);
+}
+

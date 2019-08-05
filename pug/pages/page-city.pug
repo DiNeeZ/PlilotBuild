@@ -1,0 +1,46 @@
+extends ../layout/main
+
+block content
+    section.city-banner
+        .container
+            .current-location-wrapper
+                +svg('current', 16, 24)
+                input(class="current-location" type="text" placeholder="Дерибасовская")
+            .slider-container
+                .city-page-slider
+                    .slider-element
+                        .rest
+                            img(class="rest-img" src="img/rest-img.jpg", alt="")
+                            .rest-about
+                                .rest-title McDonalds
+                                a(class="delivery-rules" href="#") Правила доставки
+                                a(class="more-btn" href="#") Подробнее
+                    .slider-element
+                        .rest
+                            img(class="rest-img" src="img/rest-img.jpg", alt="")
+                            .rest-about
+                                .rest-title McDonalds
+                                a(class="delivery-rules" href="#") Правила доставки
+                                a(class="more-btn" href="#") Подробнее
+                    .slider-element
+                        .rest
+                            img(class="rest-img" src="img/rest-img.jpg", alt="")
+                            .rest-about
+                                .rest-title McDonalds
+                                a(class="delivery-rules" href="#") Правила доставки
+                                a(class="more-btn" href="#") Подробнее            
+                .nav-prev
+                    //- button
+                    a.arrow.left
+                .nav-next
+                    //- button
+                    a.arrow.right
+    .container                
+        h2 Заказавайте доставку еды онлайн
+        .row
+            //- сделать миксин одной категории
+            .col-md-3
+                img(src="img/cat-sushi.jpg", alt="Категория суши")
+                .cat-title Суши
+                p.count-rest 15 Ресторанов
+
