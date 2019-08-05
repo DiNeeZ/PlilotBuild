@@ -6,7 +6,7 @@
 }
 
 .pizza {
-    background-image: url('../img/bg-header.jpg');
+    background-image: url('../img/pizza.jpg');
 }
 
 .wrap-banner {
@@ -15,7 +15,7 @@
     height: 100%;
 }
 
-.banner-title p{
+.banner-title p {
     font-size: 64px;
     line-height: 1.17;
     font-weight: 500;
@@ -23,43 +23,47 @@
     color: #000000;
 }
 
-.delivery-address-title p{
+.delivery-address-title p {
     font-size: 18px;
     line-height: 1.17;
-    margin:30px 0 0 0;
+    margin: 30px 0 0 0;
     color: #000000;
 }
 
 .location-search {
     position: relative;
     margin-top: 19px;
+
     input {
         width: 255px;
         height: 44px;
         padding-left: 41px;
         border-color: transparent;
         border-radius: 4px;
+
         &::placeholder {
             font-size: 14px;
             color: #5f5f5f;
         }
     }
+
     svg {
         position: absolute;
         top: 10px;
         left: 10px;
     }
+
     button {
         width: 100px;
         height: 44px;
-        margin-left: 10px; 
+        margin-left: 10px;
         font-size: 16px;
         color: #ffffff;
         background-color: #3eca28;
         border-color: transparent;
         border-radius: 4px;
         cursor: pointer;
-    }   
+    }
 }
 
 .restaurants-link {
