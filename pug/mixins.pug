@@ -6,3 +6,10 @@ mixin svg(name, w, h, cls)
     else 
         svg(xmlns="http://www.w3.org/2000/svg" width= w height= h)&attributes(attributes)
             use(xlink:href= spritePath + '#' + name)
+            
+mixin card_group_food(href, srcImg, altImg, catTitle, countRest)
+    .col-md-3.card_group_food
+        a(href= href class="cat-link" title= altImg)
+            img(src= srcImg, alt= altImg)
+            .cat-title= catTitle
+            p.count-rest= countRest

@@ -217,6 +217,10 @@ h2 {
     position: relative;
 }
 
+.sushi-roll-group {
+    position: relative;
+}
+
 .card_group_food {
     margin: 0 0 50px 0;
 
@@ -235,7 +239,7 @@ h2 {
             justify-content: center;
         }
 
-        img {
+        .sushi-img {
             border-radius: 5px;
         }
 
@@ -249,7 +253,23 @@ h2 {
         .count-rest {
             margin: 10px 0 0 0;
             font-size: 18px;
-
+        }
+        .card_group_food_all {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100%;
+            border-radius: 5px;
+            background-color: #5DBEB7;
+            color: #fff;
+            .title {
+                font-size: 20px;
+                font-weight: 500; 
+                text-align: center;       
+                span {
+                    font-size: 36px;
+                }
+            }
         }
     }
 }
@@ -281,5 +301,10 @@ h2 {
         &:hover {
             border-color: #5DBEB7;
         }
+    }
+    .sushi-all {
+        font-size: 20px;
+        margin-right: 4vmin;
+        color: #00A1FF;
     }
 }

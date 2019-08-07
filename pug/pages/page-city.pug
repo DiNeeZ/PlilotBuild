@@ -39,88 +39,73 @@ block content
             .nav-category
                 a.arrow.left-group
                 a.arrow.right-group
-
-            //- сделать миксин одной категории
-            mixin card_group_food(href, srcImg, altImg, catTitle, countRest)
-                .col-md-3.card_group_food
-                    a(href= href class="cat-link" title= altImg)
-                        img(src= srcImg, alt= altImg)
-                        .cat-title= catTitle
-                        p.count-rest= countRest
             .row
                 +card_group_food('#link','img/cat-sushi.jpg','Категория суши','Суши','12 Ресторанов')
                 +card_group_food('#link','img/barbecue.jpg','Категория блюда на мангале','Блюда на мангале','11 Ресторанов')
                 +card_group_food('#link','img/dessert.jpg','Категория дессерты','Дессерты','8 Ресторанов')
                 +card_group_food('#link','img/vegetarian.jpg','Категория вегетарианская','Вегетарианская','15 Ресторанов')
             .row
+                +card_group_food('#link','img/healthy.jpg','Категория здоровое питание','Здоровое питание','15 Ресторанов')
+                +card_group_food('#link','img/pizza-food.jpg','Категория пицца','Пицца','15 Ресторанов')
+                +card_group_food('#link','img/burger.jpg','Категория бургеры','Бургеры','15 Ресторанов')
+                +card_group_food('#link','img/dish-mish.jpg','Категория пицца','Пицца','15 Ресторанов')
+        .sushi-roll-group
+            .sushi-roll-group-title
+                h2 Суши роллы
+                .nav-category
+                    a.sushi-all Все (12)
+                    a.arrow.left-group
+                    a.arrow.right-group
+            .row
                 .col-md-3.card_group_food
                     a(href="#" class="cat-link")
-                        img(src="img/healthy.jpg", alt="Категория здоровое питание")
-                        .cat-title Здоровое питание
-                        p.count-rest 15 Ресторанов
-                .col-md-3.card_group_food   
-                    a(href="#" class="cat-link") 
-                        img(src="img/pizza-food.jpg", alt="Категория пицца")
-                        .cat-title Пицца
-                        p.count-rest 15 Ресторанов
+                        .min_logo_rest
+                            img(src="img/logo_rest/logo-kami.png", alt="Ками - Доставка еды из ресторанов")
+                        img(class="sushi-img" src="img/california-roll1.jpg", alt="Ролл Калифорния")
+                        .cat-title Ролл Калифорния
                 .col-md-3.card_group_food
                     a(href="#" class="cat-link")
-                        img(src="img/burger.jpg", alt="Категория бургеры")
-                        .cat-title Бургеры
-                        p.count-rest 15 Ресторанов
-                .col-md-3.card_group_food  
-                    a(href="#" class="cat-link")  
-                        img(src="img/dish-mish.jpg", alt="Категория пицца")
-                        .cat-title Пицца
-                        p.count-rest 15 Ресторанов
-        h2 Суши роллы
-        .row
-            .col-md-3.card_group_food
-                a(href="#" class="cat-link")
-                    .min_logo_rest
-                        img(src="img/logo_rest/mistersandwich.png", alt="Мистер Сендвич - Доставка еды из ресторанов")
-                    img(src="img/cat-sushi.jpg", alt="Категория суши")
-                    .cat-title Ролл Калифорния
-            .col-md-3.card_group_food
-                a(href="#" class="cat-link")
-                    .min_logo_rest
-                        img(src="img/logo_rest/mistersandwich.png", alt="Мистер Сендвич - Доставка еды из ресторанов")
-                    img(src="img/cat-sushi.jpg", alt="Категория суши")
-                    .cat-title Ролл Калифорния 
-            .col-md-3.card_group_food
-                a(href="#" class="cat-link")
-                    .min_logo_rest
-                        img(src="img/logo_rest/mistersandwich.png", alt="Мистер Сендвич - Доставка еды из ресторанов")
-                    img(src="img/cat-sushi.jpg", alt="Категория суши")
-                    .cat-title Ролл Калифорния
-            .col-md-3.card_group_food
-                a(href="#" class="cat-link")
-                    .min_logo_rest
-                        img(src="img/logo_rest/mistersandwich.png", alt="Мистер Сендвич - Доставка еды из ресторанов")
-                    img(src="img/cat-sushi.jpg", alt="Категория суши")
-                    .cat-title Ролл Калифорния     
-        .row
-            .col-md-3.card_group_food
-                a(href="#" class="cat-link")
-                    .min_logo_rest
-                        img(src="img/logo_rest/mistersandwich.png", alt="Мистер Сендвич - Доставка еды из ресторанов")
-                    img(src="img/cat-sushi.jpg", alt="Категория суши")
-                    .cat-title Ролл Калифорния
-            .col-md-3.card_group_food
-                a(href="#" class="cat-link")
-                    .min_logo_rest
-                        img(src="img/logo_rest/mistersandwich.png", alt="Мистер Сендвич - Доставка еды из ресторанов")
-                    img(src="img/cat-sushi.jpg", alt="Категория суши")
-                    .cat-title Ролл Калифорния 
-            .col-md-3.card_group_food
-                a(href="#" class="cat-link")
-                    .min_logo_rest
-                        img(src="img/logo_rest/mistersandwich.png", alt="Мистер Сендвич - Доставка еды из ресторанов")
-                    img(src="img/cat-sushi.jpg", alt="Категория суши")
-                    .cat-title Ролл Калифорния
-            .col-md-3.card_group_food
-                a(href="#" class="cat-link")
-                    .min_logo_rest
-                        img(src="img/logo_rest/mistersandwich.png", alt="Мистер Сендвич - Доставка еды из ресторанов")
-                    img(src="img/cat-sushi.jpg", alt="Категория суши")
-                    .cat-title Ролл Калифорния                              
+                        .min_logo_rest
+                            img(src="img/logo_rest/logo-kami.png", alt="Ками - Доставка еды из ресторанов")
+                        img(class="sushi-img" src="img/california-roll2.jpg", alt="Ролл Калифорния")
+                        .cat-title Ролл Калифорния 
+                .col-md-3.card_group_food
+                    a(href="#" class="cat-link")
+                        .min_logo_rest
+                            img(src="img/logo_rest/logo-kosmos.png", alt="Суши Бар Космос - Доставка еды из ресторанов")
+                        img(class="sushi-img" src="img/philadelfia-roll.jpg", alt="Ролл Филадельфия")
+                        .cat-title Ролл Филадельфия
+                .col-md-3.card_group_food
+                    a(href="#" class="cat-link")
+                        .min_logo_rest
+                            img(src="img/logo_rest/logo-kosmos.png", alt="Суши Бар Космос - Доставка еды из ресторанов")
+                        img(class="sushi-img" src="img/kamikaze-roll.jpg", alt="Ролл Камикадзе")
+                        .cat-title Ролл Камикадзе    
+            .row
+                .col-md-3.card_group_food
+                    a(href="#" class="cat-link")
+                        .min_logo_rest
+                            img(src="img/logo_rest/logo-irish-pub.png", alt="Irish Pub - Доставка еды из ресторанов")
+                        img(class="sushi-img" src="img/masago-sushi.jpg", alt="Масаго суши")
+                        .cat-title Масаго Суши
+                .col-md-3.card_group_food
+                    a(href="#" class="cat-link")
+                        .min_logo_rest
+                            img(src="img/logo_rest/logo-mister.png", alt="Мистер Сендвич - Доставка еды из ресторанов")
+                        img(class="sushi-img" src="img/teka-maki-roll.jpg", alt="Ролл Тека Маки")
+                        .cat-title Ролл Тека Маки
+                .col-md-3.card_group_food
+                    a(href="#" class="cat-link")
+                        .min_logo_rest
+                            img(src="img/logo_rest/logo-mister.png", alt="Мистер Сендвич - Доставка еды из ресторанов")
+                        img(class="sushi-img" src="img/tori-kunsei-roll.jpg", alt="Ролл Тори Кунсей")
+                        .cat-title Ролл Тори Кунсей
+                .col-md-3.card_group_food
+                    a(href="#" class="cat-link")
+                        .card_group_food_all
+                            .title 
+                                span Все суши
+                                br 
+                                | ресторанов
+                             
+                                                    
