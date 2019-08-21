@@ -34,6 +34,7 @@ block content
                 .nav-next
                     a.arrow.right
     .container 
+        //- Доставка еды онлайн
         .online-delivery-group               
             h2 Заказавайте доставку еды онлайн
             .nav-category
@@ -50,6 +51,7 @@ block content
                 +card_group_food('#link','img/burger.jpg','Категория бургеры','Бургеры','15 Ресторанов')
                 +card_group_food('#link','img/dish-mish.jpg','Категория пицца','Пицца','15 Ресторанов')
         .sushi-roll-group
+            //- Суши роллы
             .sushi-roll-group-title
                 h2 Суши роллы
                 .nav-category
@@ -109,10 +111,47 @@ block content
                         .cat-title Ролл Тори Кунсей
                 .col-md-3.card_group_food
                     a(href="#" class="cat-link")
-                        .card_group_food_all
+                        .card_group_food_all.catImg
                             .title 
                                 span Все суши
                                 br 
                                 | ресторанов
                              
-                                                    
+        .new-rest-group
+            //- Новые рестораны
+            .new-rest-group-title
+                h2 Новые рестораны в Pilot
+                .nav-category
+                    a.sushi-all Все (12)
+                    a.arrow.left-group
+                    a.arrow.right-group 
+            .row
+                .col-md-4.card_group_food
+                    a(href="#" class="cat-link")
+                        .min_logo_rest
+                            img(class="group_food_logo" src="img/logo_rest/logo-faina-music-pub.png", alt="Файна Мьюзик Паб")
+                        .rest-img-group
+                            img(src="img/faina-music-img.jpg", alt="Файна Мьюзик Паб")
+                        h3.rest-title Файна Мьюзик Паб
+                        p.working-hours 09:00 - 22:00
+                        .new-rest-about
+                
+                .col-md-4.card_group_food
+                    a(href="#" class="cat-link")
+                        .min_logo_rest
+                            img(class="group_food_logo" src="img/logo_rest/logo-faina-music-pub.png", alt="Файна Мьюзик Паб")
+                        .rest-img-group
+                            img(src="img/faina-music-img.jpg", alt="Файна Мьюзик Паб")
+                        h3.rest-title Файна Мьюзик Паб
+                        p.working-hours 09:00 - 22:00
+                        .new-rest-about
+            
+                .col-md-4.card_group_food
+                    a(href="#" class="cat-link")
+                        .min_logo_rest
+                            img(class="group_food_logo" src="img/logo_rest/logo-faina-music-pub.png", alt="Файна Мьюзик Паб")
+                        .rest-img-group
+                            img(src="img/faina-music-img.jpg", alt="Файна Мьюзик Паб")
+                        h3.rest-title Файна Мьюзик Паб
+                        p.working-hours 09:00 - 22:00
+                        .new-rest-about

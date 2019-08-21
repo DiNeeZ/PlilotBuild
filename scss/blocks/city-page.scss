@@ -215,6 +215,7 @@ h2 {
 
 .online-delivery-group {
     position: relative;
+   
 }
 
 .sushi-roll-group {
@@ -226,6 +227,20 @@ h2 {
 
     .cat-link {
         user-select: none;
+
+        .deliveryImg {
+            width: 100%;
+            height: 74.868%;
+            overflow: hidden;
+            border-radius: 5px;
+
+            img {
+                height: 100%;
+                width: 100%;
+                object-fit: cover;
+                background-color: #C9C9C9;
+            }
+        }
 
         .min_logo_rest {
             display: flex;
@@ -241,7 +256,7 @@ h2 {
 
         .catImg {
             width: 100%;
-            height: 81.735%;
+            height: 82%;
             overflow: hidden;
             border-radius: 5px;
 
@@ -271,11 +286,16 @@ h2 {
         }
 
         .card_group_food_all {
+            display: flex;
             justify-content: center;
             align-items: center;
             border-radius: 5px;
             background-color: #5DBEB7;
             color: #fff;
+
+            &:hover {
+                background-color: lighten(#5DBEB7, 10%);
+            } 
 
             .title {
                 font-size: 20px;
@@ -292,7 +312,7 @@ h2 {
 
 .nav-category {
     position: absolute;
-    top: 40px;
+    top: 25px;
     right: 30px;
 
     .left-group {
@@ -324,4 +344,8 @@ h2 {
         margin-right: 4vmin;
         color: #00A1FF;
     }
+}
+
+.new-rest-group {
+    position: relative;
 }
