@@ -1,10 +1,16 @@
+.logo {
+    svg {
+        width: 10em;
+        height: 2.4em;
+    }
+}
+
 .header {
     position: absolute;
     top: 0;
     left: 0;
     width: 100%;
-
-
+    z-index: 5;
 }
 
 .header-wrap {
@@ -62,5 +68,18 @@
         svg {
             transform: translate(-6px, 2px);
         }
+    }
+}
+
+@media (max-width: 40em) {
+    .logo svg {
+        width: 7.5em;
+        height: 1.8em;
+    }
+
+
+    .nav-search,
+    .cart {
+        display: none;
     }
 }

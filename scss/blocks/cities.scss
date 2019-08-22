@@ -1,5 +1,5 @@
 .cities {
-    margin: 43px 0 114px 0;
+    margin: 3em 0 8em 0;
 }
 
 .cities-title {
@@ -11,12 +11,34 @@
 }
 
 .cities-list {
-    li{
-        &:not(:last-child) {
-            margin-bottom: 20px;
-        }
+    display: flex;
+    flex-direction: column;
+
+    .bold-link {
+        font-weight: bold;
+    }
+
+    a {
+        font-size: 20px;
+        margin-bottom: 20px;
+    }
+}
+
+@media (max-width: 40em) {
+    .cities {
+        margin: 2em 0 4em 0;
+    }
+
+    .cities-list {
         a {
-            font-size: 20px;
+            font-size: 1em;
         }
     }
+
+    .cities-title {
+        margin: 0 0 1.5em 0;
+        font-size: 2rem;
+    }
+
+
 }

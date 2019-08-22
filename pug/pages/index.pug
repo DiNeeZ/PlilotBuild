@@ -20,50 +20,64 @@ block content
     section.cities
         .container
             h2.cities-title Пилотируем в городах
-            .row    
-                .col-md-5
-                    ul.cities-list
-                        li
-                            a(href="page-city.html") Одесса
-                        li
-                            a(href="") Киев
-                        li
-                            a(href="") Черноморск
-                        li
-                            a(href="") Николаев
-                .col-md-5
-                    ul.cities-list
-                        li
-                            a(href="") Львов
-                        li
-                            a(href="") Днепропетровск
-                        li
-                            a(href="") Харьков 
-                .col-md-2
-                    ul.cities-list
-                        li
-                            a(href="") Чернигов 
-                        li
-                            a(href="") Житомир 
-                        li
-                            a(href="") Ужгород
-    section.apps
-            .apps-wrap
-                .container
-                    .wrap-apps-bg
-                        img.apps-bg(src="img/app-img.png", alt="")  
-                    .description-apps
-                        h2.apps-title Дорогая, мы не готовим сегодня вечером
-                        p.apps-text Разместите приложение Wolt, награжденное Apple, на главном экране, и вы сможете выбрать из более 5000 ресторанов в более чем 40 городах по всей Европе. Откройте для себя лучшие блюда вокруг вас, принесенные вам.
-                        .apps-links
-                            .mobile-links
-                                ul
-                                    li
-                                        a(href="")
-                                            +svg('app-ios', 119.66, 42.95)
-                                    li
-                                        a(href="")
-                                            img(src="img/app-android.png", alt="Скачать android приложение")
-                            .qr-code
-                                img(src="img/qr-code.png", alt="")
+            .flex-cities-list    
+                .cities-list
+                        a(href="page-city.html", class="bold-link") Одесса
+                        a(href="") Киев
+                        a(href="") Черноморск
+                        a(href="") Николаев
+                .cities-list
+                        a(href="") Львов
+                        a(href="") Днепропетровск
+                        a(href="") Харьков 
+                .cities-list
+                        a(href="") Чернигов 
+                        a(href="") Житомир 
+                        a(href="") Ужгород
+    section.banners
+        .container
+            .row
+                .col-md-4.col-sm-6.ban-item
+                    a.object-fit(href="#") 
+                        h3 Доставка еды из ресторанов
+                        img(src="img/banner_main1.jpg", alt="Доставка еды из ресторанов")
+                .col-md-4.col-sm-6.ban-item
+                    a.object-fit(href="#") 
+                        h3 Доставка продуктов
+                        img(src="img/banner_main2.png", alt="Доставка продуктов")
+                .col-md-4.col-sm-6.ban-item
+                    a.object-fit(href="#") 
+                        img(src="img/oblaka.jpg", alt="")
+                .col-md-4.col-sm-6.ban-item
+                    a.object-fit(href="#") 
+                        h3 Что угодно
+                        img(src="img/banner_Doki.png", alt="Что угодно")
+                .col-md-4.col-sm-6.ban-item
+                    a.object-fit(href="#") 
+                        h3 Стать пилотом
+                        img(src="img/become_pilot.jpg", alt="Стать пилотом")
+                .col-md-4.col-sm-6.ban-item
+                    a.object-fit(href="#") 
+                        h3 Добавить ресторан
+                        img(src="img/banner_addrestaurant.jpg", alt="Добавить ресторан")
+                
+    //- section.apps
+    //-         .apps-wrap
+    //-             .container
+    //-                 .wrap-apps-bg
+    //-                     img.apps-bg(src="img/app-img.png", alt="")  
+    //-                 .description-apps
+    //-                     h2.apps-title Дорогая, мы не готовим сегодня вечером
+    //-                     p.apps-text Разместите приложение Wolt, награжденное Apple, на главном экране, и вы сможете выбрать из более 5000 ресторанов в более чем 40 городах по всей Европе. Откройте для себя лучшие блюда вокруг вас, принесенные вам.
+    //-                     .apps-links
+    //-                         .mobile-links
+    //-                             ul
+    //-                                 li
+    //-                                     a(href="")
+    //-                                         +svg('app-ios', 119.66, 42.95)
+    //-                                 li
+    //-                                     a(href="")
+    //-                                         img(src="img/app-android.png", alt="Скачать android приложение")
+    //-                         .qr-code
+    //-                             img(src="img/qr-code.png", alt="")
                                       

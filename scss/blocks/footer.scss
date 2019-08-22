@@ -1,5 +1,4 @@
 .footer {
-  height: 317px;
   padding-top: 60px;
   background-color: #d9eeec;
 }
@@ -21,6 +20,7 @@
   .social-links {
     display: flex;
     margin-top: 30px;
+
     a {
       display: flex;
       justify-content: center;
@@ -35,16 +35,19 @@
       border-radius: 50%;
       transition: all 0.15s linear;
       box-sizing: inherit;
+
       &.facebook-link:hover {
         background-color: #455890;
         color: #ffffff;
         border-color: #455890;
       }
+
       &.twitter-link:hover {
         background-color: #1DA1F2;
         color: #ffffff;
         border-color: #1DA1F2;
       }
+
       &.instagram-link:hover {
         background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285aeb 90%);
         color: #ffffff;
@@ -58,15 +61,16 @@
 .footer-links_2 {
   li {
     margin-bottom: 15px;
+
     a {
       line-height: 1.14;
     }
   }
-  
+
 }
 
 .footer-links_1 {
-	
+
   li:last-child {
     margin-top: 40px;
     margin-bottom: 0;
@@ -80,7 +84,7 @@
 }
 
 .footer-app-links {
-  ul{
+  ul {
     li:first-child {
       margin-bottom: 22px;
     }
@@ -91,5 +95,21 @@
   p {
     margin-top: 40px;
     color: #000000;
+  }
+}
+
+@media (max-width: 40em) {
+  .footer {
+    ul {
+      margin: 1.5em 0;
+    }
+  }
+
+  .footer-links_1 {
+
+    li:last-child {
+      margin-top: 15px;
+      margin-bottom: 15px;
+    }
   }
 }

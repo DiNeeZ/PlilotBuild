@@ -5,7 +5,7 @@ header.header
         .header-wrap
             .logo
                 a(href="/")
-                    +svg('logo', 131, 31)
+                    +svg('logo')
             .nav-search
                 input(type="text" placeholder="Поиск")
                 +svg('search', 18, 18)
@@ -15,7 +15,7 @@ header.header
                         a(href="#") UA
                     li.nav-right-item
                         a(href="#") Войти
-                    li.nav-right-item
+                    li.nav-right-item.cart
                         a(href="#")  
                             +svg('cart', 14.31, 18)
                             | Товаров      
