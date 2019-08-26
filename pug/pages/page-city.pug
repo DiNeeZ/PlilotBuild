@@ -133,12 +133,23 @@ block content
                             img(class="group_food_logo" src="img/logo_rest/logo-faina-music-pub.png", alt="Файна Мьюзик Паб")
                         .rest-img-group
                             img(src="img/faina-music-img.jpg", alt="Файна Мьюзик Паб")
+                            //- SVG Circle Chart
+                            .delivery-terms
+                                svg(class="circle-chart" viewbox="0 0 33.83098862 33.83098862" width="64" height="64" xmlns="http://www.w3.org/2000/svg")
+                                    circle(class="circle-chart__background" stroke="#efefef" stroke-width="4" fill="none" cx="16.91549431" cy="16.91549431" r="15.91549431")
+                                    circle(class="circle-chart__circle" stroke="#00acc1" stroke-width="2" stroke-dasharray="50,100" stroke-linecap="round" fill="none" cx="16.91549431" cy="16.91549431" r="15.91549431")
+                                    g(class="circle-chart__info")
+                                        text(class="circle-chart__percent" x="16.91549431" y="15.5" alignment-baseline="central" text-anchor="middle" font-size="8") 30%
+                                        text(class="circle-chart__subline" x="16.91549431" y="20.5" alignment-baseline="central" text-anchor="middle" font-size="2") Yay 30% progress!
+                            //- SVG Circle Chart End
                         h3.rest-title Файна Мьюзик Паб
                         p.working-hours
                             +svg('watch', 12, 12)
                             span 09:00 - 22:00     
                         .new-rest-about  
-                            .rest-about-text Кофейня, Пирожковая
+                            .rest-about-text
+                                +svg('flatware', 18, 18)
+                                span Кофейня, Пирожковая
                             .rest-about-money 
                                 span &#8372
                                 span &#8372
@@ -157,7 +168,9 @@ block content
                             +svg('watch', 12, 12)
                             span 09:00 - 22:00     
                         .new-rest-about    
-                            .rest-about-text Кофейня, Пирожковая
+                            .rest-about-text
+                                +svg('flatware', 18, 18)
+                                span Кофейня, Пирожковая
                             .rest-about-money 
                                 span &#8372
                                 span &#8372
@@ -176,7 +189,9 @@ block content
                             +svg('watch', 12, 12)
                             span 09:00 - 22:00                               
                         .new-rest-about
-                            .rest-about-text Кофейня, Пирожковая
+                            .rest-about-text 
+                                +svg('flatware', 18, 18)
+                                span Кофейня, Пирожковая
                             .rest-about-money 
                                 span &#8372
                                 span &#8372
@@ -184,3 +199,92 @@ block content
                             .rest-about-rating 
                                 +svg('smile', 22, 22)
                                 span 7.8    
+        .popular-now
+            //- Популярные сейчас
+            .popular-now-title
+                h2 Популярные сейчас
+                .nav-category
+                    a.sushi-all Все (12)
+                    a.arrow.left-group
+                    a.arrow.right-group 
+            .row
+                .col-md-4.card_group_food
+                    a(href="#" class="cat-link")
+                        .min_logo_rest
+                            img(class="group_food_logo" src="img/logo_rest/logo-faina-music-pub.png", alt="Файна Мьюзик Паб")
+                        .rest-img-group
+                            img(src="img/faina-music-img.jpg", alt="Файна Мьюзик Паб")
+                        h3.rest-title Файна Мьюзик Паб
+                        p.working-hours
+                            +svg('watch', 12, 12)
+                            span 09:00 - 22:00     
+                        .new-rest-about  
+                            .rest-about-text
+                                +svg('flatware', 18, 18)
+                                span Кофейня, Пирожковая
+                            .rest-about-money 
+                                span &#8372
+                                span &#8372
+                                span &#8372
+                            .rest-about-rating 
+                                +svg('smile', 22, 22)
+                                span 7.8              
+                .col-md-4.card_group_food
+                    a(href="#" class="cat-link")
+                        .min_logo_rest
+                            img(class="group_food_logo" src="img/logo_rest/logo-faina-music-pub.png", alt="Файна Мьюзик Паб")
+                        .rest-img-group
+                            img(src="img/faina-music-img.jpg", alt="Файна Мьюзик Паб")
+                        h3.rest-title Файна Мьюзик Паб
+                        p.working-hours
+                            +svg('watch', 12, 12)
+                            span 09:00 - 22:00     
+                        .new-rest-about    
+                            .rest-about-text
+                                +svg('flatware', 18, 18)
+                                span Кофейня, Пирожковая
+                            .rest-about-money 
+                                span &#8372
+                                span &#8372
+                                span &#8372
+                            .rest-about-rating 
+                                +svg('smile', 22, 22)
+                                span 7.8           
+                .col-md-4.card_group_food
+                    a(href="#" class="cat-link")
+                        .min_logo_rest
+                            img(class="group_food_logo" src="img/logo_rest/logo-faina-music-pub.png", alt="Файна Мьюзик Паб")
+                        .rest-img-group
+                            img(src="img/faina-music-img.jpg", alt="Файна Мьюзик Паб")
+                        h3.rest-title Файна Мьюзик Паб
+                        p.working-hours
+                            +svg('watch', 12, 12)
+                            span 09:00 - 22:00                               
+                        .new-rest-about
+                            .rest-about-text 
+                                +svg('flatware', 18, 18)
+                                span Кофейня, Пирожковая
+                            .rest-about-money 
+                                span &#8372
+                                span &#8372
+                                span &#8372
+                            .rest-about-rating 
+                                +svg('smile', 22, 22)
+                                span 7.8
+        .near-with-you
+            .near-with-you-title
+                h2 Великолепные блюда рядом с вами
+                .row
+                    .col-md-6
+                        .near-item
+                            .near-item-desc
+                                h3 Популярные блюда
+                                p Выбор популярных блюд рядом с вами
+                            img(src="img/popular-dishes.jpg", alt="")
+                    .col-md-6
+                        .near-item
+                            .near-item-desc
+                                h3 Рекомендуется для вас
+                                p Выбор рекомендуемых блюд рядом с вами
+                            img(src="img/recommended.jpg", alt="")
+        

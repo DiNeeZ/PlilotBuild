@@ -88,6 +88,9 @@
     li:first-child {
       margin-bottom: 22px;
     }
+    li:last-child img{
+      max-width: 120px;
+    }
   }
 }
 
