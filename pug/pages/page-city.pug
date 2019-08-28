@@ -127,20 +127,21 @@ block content
                     a.arrow.left-group
                     a.arrow.right-group 
             .row
-                .col-md-4.card_group_food
-                    a(href="#" class="cat-link")
+                .col-md-4.card_group_food.not-hidden
+                    a(href="#" class="cat-link ")
                         .min_logo_rest
                             img(class="group_food_logo" src="img/logo_rest/logo-faina-music-pub.png", alt="Файна Мьюзик Паб")
                         .rest-img-group
                             img(src="img/faina-music-img.jpg", alt="Файна Мьюзик Паб")
                             //- SVG Circle Chart
-                            .delivery-terms
-                                svg(class="circle-chart" viewbox="0 0 33.83098862 33.83098862" width="64" height="64" xmlns="http://www.w3.org/2000/svg")
-                                    circle(class="circle-chart__background" stroke="#efefef" stroke-width="4" fill="none" cx="16.91549431" cy="16.91549431" r="15.91549431")
-                                    circle(class="circle-chart__circle" stroke="#00acc1" stroke-width="2" stroke-dasharray="50,100" stroke-linecap="round" fill="none" cx="16.91549431" cy="16.91549431" r="15.91549431")
-                                    g(class="circle-chart__info")
-                                        text(class="circle-chart__percent" x="16.91549431" y="15.5" alignment-baseline="central" text-anchor="middle" font-size="8") 30%
-                                        text(class="circle-chart__subline" x="16.91549431" y="20.5" alignment-baseline="central" text-anchor="middle" font-size="2") Yay 30% progress!
+                        .delivery-terms
+                            svg(class="progress-ring" viewbox="0 0 68 68" width="68" height="68" xmlns="http://www.w3.org/2000/svg")
+                                circle(class="progress-ring__background" cx="34"  cy="34" r="34" fill="#ffffff")
+                                circle(class="progress-ring__background-stoke"  stroke="#DADADA" stroke-width="4" cx="34" cy="34" r="30" fill="transparent")
+                                circle(class="progress-ring__circle" stroke="#5DDFD6" stroke-width="4" cx="34" cy="34" r="30"  fill="transparent")
+                                g(class="circle-chart__info")
+                                    text(class="circle-chart__percent" x="34" y="28" alignment-baseline="central" text-anchor="middle") 30
+                                    text(class="circle-chart__subline" x="34" y="44" alignment-baseline="central" text-anchor="middle" ) мин
                             //- SVG Circle Chart End
                         h3.rest-title Файна Мьюзик Паб
                         p.working-hours
@@ -157,12 +158,22 @@ block content
                             .rest-about-rating 
                                 +svg('smile', 22, 22)
                                 span 7.8              
-                .col-md-4.card_group_food
+                .col-md-4.card_group_food.not-hidden
                     a(href="#" class="cat-link")
                         .min_logo_rest
                             img(class="group_food_logo" src="img/logo_rest/logo-faina-music-pub.png", alt="Файна Мьюзик Паб")
                         .rest-img-group
                             img(src="img/faina-music-img.jpg", alt="Файна Мьюзик Паб")
+                            //- SVG Circle Chart
+                        .delivery-terms
+                            svg(class="progress-ring" viewbox="0 0 68 68" width="68" height="68" xmlns="http://www.w3.org/2000/svg")
+                                circle(class="progress-ring__background" cx="34"  cy="34" r="34" fill="#ffffff")
+                                circle(class="progress-ring__background-stoke"  stroke="#DADADA" stroke-width="4" cx="34" cy="34" r="30" fill="transparent")
+                                circle(class="progress-ring__circle" stroke="#5DDFD6" stroke-width="4" cx="34" cy="34" r="30"  fill="transparent")
+                                g(class="circle-chart__info")
+                                    text(class="circle-chart__percent" x="34" y="28" alignment-baseline="central" text-anchor="middle") 30
+                                    text(class="circle-chart__subline" x="34" y="44" alignment-baseline="central" text-anchor="middle" ) мин
+                            //- SVG Circle Chart End
                         h3.rest-title Файна Мьюзик Паб
                         p.working-hours
                             +svg('watch', 12, 12)
@@ -178,12 +189,22 @@ block content
                             .rest-about-rating 
                                 +svg('smile', 22, 22)
                                 span 7.8           
-                .col-md-4.card_group_food
+                .col-md-4.card_group_food.not-hidden
                     a(href="#" class="cat-link")
                         .min_logo_rest
                             img(class="group_food_logo" src="img/logo_rest/logo-faina-music-pub.png", alt="Файна Мьюзик Паб")
                         .rest-img-group
                             img(src="img/faina-music-img.jpg", alt="Файна Мьюзик Паб")
+                            //- SVG Circle Chart
+                        .delivery-terms
+                            svg(class="progress-ring" viewbox="0 0 68 68" width="68" height="68" xmlns="http://www.w3.org/2000/svg")
+                                circle(class="progress-ring__background" cx="34"  cy="34" r="34" fill="#ffffff")
+                                circle(class="progress-ring__background-stoke"  stroke="#DADADA" stroke-width="4" cx="34" cy="34" r="30" fill="transparent")
+                                circle(class="progress-ring__circle" stroke="#5DDFD6" stroke-width="4" cx="34" cy="34" r="30"  fill="transparent")
+                                g(class="circle-chart__info")
+                                    text(class="circle-chart__percent" x="34" y="28" alignment-baseline="central" text-anchor="middle") 30
+                                    text(class="circle-chart__subline" x="34" y="44" alignment-baseline="central" text-anchor="middle" ) мин
+                            //- SVG Circle Chart End
                         h3.rest-title Файна Мьюзик Паб
                         p.working-hours
                             +svg('watch', 12, 12)
@@ -208,12 +229,22 @@ block content
                     a.arrow.left-group
                     a.arrow.right-group 
             .row
-                .col-md-4.card_group_food
+                .col-md-4.card_group_food.not-hidden
                     a(href="#" class="cat-link")
                         .min_logo_rest
                             img(class="group_food_logo" src="img/logo_rest/logo-faina-music-pub.png", alt="Файна Мьюзик Паб")
                         .rest-img-group
                             img(src="img/faina-music-img.jpg", alt="Файна Мьюзик Паб")
+                            //- SVG Circle Chart
+                        .delivery-terms
+                            svg(class="progress-ring" viewbox="0 0 68 68" width="68" height="68" xmlns="http://www.w3.org/2000/svg")
+                                circle(class="progress-ring__background" cx="34"  cy="34" r="34" fill="#ffffff")
+                                circle(class="progress-ring__background-stoke"  stroke="#DADADA" stroke-width="4" cx="34" cy="34" r="30" fill="transparent")
+                                circle(class="progress-ring__circle" stroke="#5DDFD6" stroke-width="4" cx="34" cy="34" r="30"  fill="transparent")
+                                g(class="circle-chart__info")
+                                    text(class="circle-chart__percent" x="34" y="28" alignment-baseline="central" text-anchor="middle") 30
+                                    text(class="circle-chart__subline" x="34" y="44" alignment-baseline="central" text-anchor="middle" ) мин
+                            //- SVG Circle Chart End
                         h3.rest-title Файна Мьюзик Паб
                         p.working-hours
                             +svg('watch', 12, 12)
@@ -229,12 +260,22 @@ block content
                             .rest-about-rating 
                                 +svg('smile', 22, 22)
                                 span 7.8              
-                .col-md-4.card_group_food
+                .col-md-4.card_group_food.not-hidden
                     a(href="#" class="cat-link")
                         .min_logo_rest
                             img(class="group_food_logo" src="img/logo_rest/logo-faina-music-pub.png", alt="Файна Мьюзик Паб")
                         .rest-img-group
                             img(src="img/faina-music-img.jpg", alt="Файна Мьюзик Паб")
+                            //- SVG Circle Chart
+                        .delivery-terms
+                            svg(class="progress-ring" viewbox="0 0 68 68" width="68" height="68" xmlns="http://www.w3.org/2000/svg")
+                                circle(class="progress-ring__background" cx="34"  cy="34" r="34" fill="#ffffff")
+                                circle(class="progress-ring__background-stoke"  stroke="#DADADA" stroke-width="4" cx="34" cy="34" r="30" fill="transparent")
+                                circle(class="progress-ring__circle" stroke="#5DDFD6" stroke-width="4" cx="34" cy="34" r="30"  fill="transparent")
+                                g(class="circle-chart__info")
+                                    text(class="circle-chart__percent" x="34" y="28" alignment-baseline="central" text-anchor="middle") 30
+                                    text(class="circle-chart__subline" x="34" y="44" alignment-baseline="central" text-anchor="middle" ) мин
+                            //- SVG Circle Chart End
                         h3.rest-title Файна Мьюзик Паб
                         p.working-hours
                             +svg('watch', 12, 12)
@@ -250,12 +291,22 @@ block content
                             .rest-about-rating 
                                 +svg('smile', 22, 22)
                                 span 7.8           
-                .col-md-4.card_group_food
+                .col-md-4.card_group_food.not-hidden
                     a(href="#" class="cat-link")
                         .min_logo_rest
                             img(class="group_food_logo" src="img/logo_rest/logo-faina-music-pub.png", alt="Файна Мьюзик Паб")
                         .rest-img-group
                             img(src="img/faina-music-img.jpg", alt="Файна Мьюзик Паб")
+                            //- SVG Circle Chart
+                        .delivery-terms
+                            svg(class="progress-ring" viewbox="0 0 68 68" width="68" height="68" xmlns="http://www.w3.org/2000/svg")
+                                circle(class="progress-ring__background" cx="34"  cy="34" r="34" fill="#ffffff")
+                                circle(class="progress-ring__background-stoke"  stroke="#DADADA" stroke-width="4" cx="34" cy="34" r="30" fill="transparent")
+                                circle(class="progress-ring__circle" stroke="#5DDFD6" stroke-width="4" cx="34" cy="34" r="30"  fill="transparent")
+                                g(class="circle-chart__info")
+                                    text(class="circle-chart__percent" x="34" y="28" alignment-baseline="central" text-anchor="middle") 30
+                                    text(class="circle-chart__subline" x="34" y="44" alignment-baseline="central" text-anchor="middle" ) мин
+                            //- SVG Circle Chart End
                         h3.rest-title Файна Мьюзик Паб
                         p.working-hours
                             +svg('watch', 12, 12)
