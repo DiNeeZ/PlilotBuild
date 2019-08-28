@@ -343,7 +343,7 @@ h2 {
 }
 
 .new-rest-group {
-    // position: relative;
+    position: relative;
     margin-bottom: 50px;
     a {
         color: #000000;
@@ -431,6 +431,10 @@ h3.rest-title {
         color: #5F5F5F;
        span {
            padding-left: 7px;
+           white-space: nowrap;
+           text-overflow: ellipsis;
+           overflow: hidden;
+           width: 160px;
        }
     }
     .rest-about-money {
