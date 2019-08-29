@@ -390,11 +390,11 @@ stroke-dashoffset число, которое делится на 60 - колич
 .progress-ring__circle {
     transform-origin: center;
     transform: rotate(-90deg);
-    stroke-dasharray:  calc(2*3.14*30) calc(2*3.14*30);
-    stroke-dashoffset:  calc((2*3.14*30) - (30/60*((2*3.14*30))));
+    // stroke-dasharray:  calc(2*3.14*30) calc(2*3.14*30);
+    // stroke-dashoffset:  calc((2*3.14*30) - (30/60*((2*3.14*30))));
   }
   
-  .circle-chart__percent {
+  .circle-chart__minutes {
     font-size: 22px;
     font-family: Roboto;
   }
