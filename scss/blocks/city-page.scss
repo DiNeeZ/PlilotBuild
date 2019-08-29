@@ -227,7 +227,8 @@ h2 {
 
         .deliveryImg {
             width: 100%;
-            height: 74.735%;;
+            height: 74.735%;
+            ;
             overflow: hidden;
             border-radius: 5px;
 
@@ -345,6 +346,7 @@ h2 {
 .new-rest-group {
     position: relative;
     margin-bottom: 50px;
+
     a {
         color: #000000;
     }
@@ -355,7 +357,7 @@ h2 {
 }
 
 .rest-img-group {
-    
+
     position: relative;
     width: 100%;
     height: 64%;
@@ -363,7 +365,7 @@ h2 {
     border-radius: 8px;
 
     img {
-        
+
         height: 100%;
         width: 100%;
         object-fit: cover;
@@ -376,13 +378,12 @@ h2 {
 }
 
 .delivery-terms {
-    position: absolute;
-    top: 53.859%;
-    left: 75.342%;
-    width: 100%;
-    height: 100%;
-    
+    position: relative;
+    float: right;
+    bottom: 35px;
+    right: 20px;
 }
+
 
 /* stroke-dasharray 2 значения, равные длине окружности 2ПиR
 stroke-dashoffset число, которое делится на 60 - количество минут */
@@ -392,18 +393,18 @@ stroke-dashoffset число, которое делится на 60 - колич
     transform: rotate(-90deg);
     // stroke-dasharray:  calc(2*3.14*30) calc(2*3.14*30);
     // stroke-dashoffset:  calc((2*3.14*30) - (30/60*((2*3.14*30))));
-  }
-  
-  .circle-chart__minutes {
+}
+
+.circle-chart__minutes {
     font-size: 22px;
     font-family: Roboto;
-  }
-  
-  .circle-chart__subline {
+}
+
+.circle-chart__subline {
     font-size: 12px;
     font-family: Roboto;
     font-weight: 400;
-  }
+}
 
 h3.rest-title {
     margin-top: 22px;
@@ -415,6 +416,7 @@ h3.rest-title {
 
 .working-hours {
     margin: 3px 0 10px 0;
+
     span {
         padding-left: 6px;
     }
@@ -424,19 +426,22 @@ h3.rest-title {
     display: flex;
     justify-content: space-between;
     align-items: center;
+
     .rest-about-text {
         display: flex;
         align-items: center;
         font-size: 16px;
         color: #5F5F5F;
-       span {
-           padding-left: 7px;
-           white-space: nowrap;
-           text-overflow: ellipsis;
-           overflow: hidden;
-           width: 160px;
-       }
+
+        span {
+            padding-left: 7px;
+            white-space: nowrap;
+            text-overflow: ellipsis;
+            overflow: hidden;
+            width: 160px;
+        }
     }
+
     .rest-about-money {
 
         font-size: 16px;
@@ -448,10 +453,11 @@ h3.rest-title {
         }
 
     }
+
     .rest-about-rating {
         display: flex;
         align-items: center;
-        
+
         span {
             padding-left: 10px;
             font-size: 18px;
@@ -463,6 +469,7 @@ h3.rest-title {
 .popular-now {
     position: relative;
     margin-bottom: 67px;
+
     a {
         color: #000000;
     }
@@ -497,6 +504,7 @@ h3.rest-title {
         font-size: 24px;
         font-weight: 700;
     }
+
     p {
         font-weight: 18px;
     }

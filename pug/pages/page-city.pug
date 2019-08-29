@@ -3,6 +3,7 @@ extends ../layout/main
 block content
     section.city-banner
         .container
+            h1.hidden Доставку еды Одесса
             .current-location-wrapper
                 +svg('current', 16, 24)
                 input(class="current-location" type="text" placeholder="Дерибасовская")
@@ -35,7 +36,7 @@ block content
                     a.arrow.right
     .container 
         //- Доставка еды онлайн
-        p Суши - Бургер - Салаты - Кебаб - Пицца - Рыба - Сэндвичи - Супы - Стейк - Уличная еда - Здоровая еда - Паста - Десерты - Вегетарианская - Лапша - Крылышки - Смузи - Веганская - Завтрак
+        //- p Суши - Бургер - Салаты - Кебаб - Пицца - Рыба - Сэндвичи - Супы - Стейк - Уличная еда - Здоровая еда - Паста - Десерты - Вегетарианская - Лапша - Крылышки - Смузи - Веганская - Завтрак
         .online-delivery-group               
             h2 Заказавайте доставку еды онлайн
             .nav-category
@@ -273,7 +274,7 @@ block content
                                 circle(class="progress-ring__background-stoke"  stroke="#DADADA" stroke-width="4" cx="34" cy="34" r="30" fill="transparent")
                                 circle(class="progress-ring__circle" stroke="#5DDFD6" stroke-width="4" cx="34" cy="34" r="30"  fill="transparent")
                                 g(class="circle-chart__info")
-                                    text(class="circle-chart__minutes" x="34" y="28" alignment-baseline="central" text-anchor="middle") 17
+                                    text(class="circle-chart__minutes" x="34" y="28" alignment-baseline="central" text-anchor="middle") 10
                                     text(class="circle-chart__subline" x="34" y="44" alignment-baseline="central" text-anchor="middle" ) мин
                             //- SVG Circle Chart End
                         h3.rest-title Файна Мьюзик Паб
