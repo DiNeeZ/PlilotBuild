@@ -1,6 +1,7 @@
 .footer {
+  margin-top: 80px;
   padding-top: 60px;
-  background-color: #d9eeec;
+  background-color: #F2F8F7;
 }
 
 .footer-info {
@@ -85,10 +86,11 @@
 
 .footer-app-links {
   ul {
-    li:first-child {
+    li {
       margin-bottom: 22px;
     }
-    li:last-child img{
+
+    li:last-child img {
       max-width: 120px;
     }
   }
@@ -105,6 +107,21 @@
   .footer {
     ul {
       margin: 1.5em 0;
+    }
+
+    .col-md-3 {
+      flex: 1;
+    }
+  }
+
+  .footer-app-links {
+    ul {
+      display: flex;
+
+      li {
+        flex: 1;
+        margin-bottom: 0;
+      }
     }
   }
 

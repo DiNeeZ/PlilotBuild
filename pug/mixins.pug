@@ -8,7 +8,7 @@ mixin svg(name, w, h, cls)
             use(xlink:href= spritePath + '#' + name)
             
 mixin card_group_food(href, srcImg, altImg, catTitle, countRest)
-    .col-md-3.card_group_food
+    .col-sm-3.card_group_food
         a(href= href class="cat-link" title= altImg)
             .deliveryImg
                 img(src= srcImg, alt= altImg)

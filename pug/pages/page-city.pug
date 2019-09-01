@@ -7,34 +7,41 @@ block content
             .current-location-wrapper
                 +svg('current', 16, 24)
                 input(class="current-location" type="text" placeholder="Дерибасовская")
+        .wrap-container    
             .slider-container
                 .city-page-slider
                     .slider-element
                         .rest
-                            img(class="rest-img" src="img/rest-img.jpg", alt="")
+                            a(class="rest-img" href="#")
+                                img( src="img/rest-img2.jpg", alt="")
                             .rest-about
-                                .rest-title McDonalds
-                                a(class="delivery-rules" href="#") Правила доставки
-                                a(class="more-btn" href="#") Подробнее
+                                a( href="#McDonalds")
+                                    .rest-title Pytania & Odpowiedzi
+                                    .delivery-rules Kim jesteśmy i jak działamy? 🧐 
+                                    a(class="more-btn" href="#more-btn") Подробнее
                     .slider-element
                         .rest
-                            img(class="rest-img" src="img/rest-img.jpg", alt="")
+                            a(class="rest-img" href="#")
+                                img( src="img/rest-img.jpg", alt="")
                             .rest-about
-                                .rest-title McDonalds rest2
-                                a(class="delivery-rules" href="#") Правила доставки
-                                a(class="more-btn" href="#") Подробнее
+                                a( href="#McDonalds")
+                                    .rest-title McDonalds rest2
+                                    .delivery-rules Правила доставки
+                                    a(class="more-btn" href="#more-btn") Подробнее
                     .slider-element
                         .rest
-                            img(class="rest-img" src="img/rest-img.jpg", alt="")
+                            a(class="rest-img" href="#")
+                                img( src="img/rest-img.jpg", alt="")
                             .rest-about
-                                .rest-title McDonalds rest3
-                                a(class="delivery-rules" href="#") Правила доставки
-                                a(class="more-btn" href="#") Подробнее            
+                                a( href="#McDonalds")
+                                    .rest-title McDonalds rest3
+                                    .delivery-rules Правила доставки
+                                    a(class="more-btn" href="#more-btn") Подробнее            
                 .nav-prev
                     a.arrow.left
                 .nav-next
                     a.arrow.right
-    .container 
+    .wrap-container 
         //- Доставка еды онлайн
         //- p Суши - Бургер - Салаты - Кебаб - Пицца - Рыба - Сэндвичи - Супы - Стейк - Уличная еда - Здоровая еда - Паста - Десерты - Вегетарианская - Лапша - Крылышки - Смузи - Веганская - Завтрак
         .online-delivery-group               
@@ -42,16 +49,29 @@ block content
             .nav-category
                 a.arrow.left-group
                 a.arrow.right-group
-            .row
+        .pc_v            
+            p PC version
+            .row 
                 +card_group_food('#link','img/cat-sushi.jpg','Категория суши','Суши','12 Ресторанов')
                 +card_group_food('#link','img/barbecue.jpg','Категория блюда на мангале','Блюда на мангале','11 Ресторанов')
                 +card_group_food('#link','img/dessert.jpg','Категория дессерты','Дессерты','8 Ресторанов')
                 +card_group_food('#link','img/vegetarian.jpg','Категория вегетарианская','Вегетарианская','15 Ресторанов')
-            .row
                 +card_group_food('#link','img/healthy.jpg','Категория здоровое питание','Здоровое питание','15 Ресторанов')
                 +card_group_food('#link','img/pizza-food.jpg','Категория пицца','Пицца','15 Ресторанов')
                 +card_group_food('#link','img/burger.jpg','Категория бургеры','Бургеры','15 Ресторанов')
                 +card_group_food('#link','img/dish-mish.jpg','Категория пицца','Пицца','15 Ресторанов')
+        .mob_v
+            p mobile version
+            .cat_carousel_container        
+                .cat_carousel        
+                    +card_group_food('#link','img/cat-sushi.jpg','Категория суши','Суши','12 Ресторанов')
+                    +card_group_food('#link','img/barbecue.jpg','Категория блюда на мангале','Блюда на мангале','11 Ресторанов')
+                    +card_group_food('#link','img/dessert.jpg','Категория дессерты','Дессерты','8 Ресторанов')
+                    +card_group_food('#link','img/vegetarian.jpg','Категория вегетарианская','Вегетарианская','15 Ресторанов')
+                    +card_group_food('#link','img/healthy.jpg','Категория здоровое питание','Здоровое питание','15 Ресторанов')
+                    +card_group_food('#link','img/pizza-food.jpg','Категория пицца','Пицца','15 Ресторанов')
+                    +card_group_food('#link','img/burger.jpg','Категория бургеры','Бургеры','15 Ресторанов')
+                    +card_group_food('#link','img/dish-mish.jpg','Категория пицца','Пицца','15 Ресторанов')
         .sushi-roll-group
             //- Суши роллы
             .sushi-roll-group-title
@@ -60,65 +80,113 @@ block content
                     a.sushi-all Все (12)
                     a.arrow.left-group
                     a.arrow.right-group
-            .row
-                .col-md-3.card_group_food
-                    a(href="#" class="cat-link")
-                        .min_logo_rest
-                            img(class="group_food_logo" src="img/logo_rest/logo-kami.png", alt="Ками - Доставка еды из ресторанов")
-                        .catImg.tagSushi
-                            img(class="sushi-img" src="img/california-roll1.jpg", alt="Ролл Калифорния")
-                        .cat-title Ролл Калифорния
-                .col-md-3.card_group_food
-                    a(href="#" class="cat-link")
-                        .min_logo_rest
-                            img(class="group_food_logo" src="img/logo_rest/logo-kami.png", alt="Ками - Доставка еды из ресторанов")
-                        .catImg.tagSushi
-                            img(class="sushi-img" src="img/california-roll2.jpg", alt="Ролл Калифорния")
-                        .cat-title Ролл Калифорния 
-                .col-md-3.card_group_food
-                    a(href="#" class="cat-link")
-                        .min_logo_rest
-                            img(class="group_food_logo" src="img/logo_rest/logo-kosmos.png", alt="Суши Бар Космос - Доставка еды из ресторанов")
-                        .catImg.tagSushi
-                            img(class="sushi-img" src="img/philadelfia-roll.jpg", alt="Ролл Филадельфия")
-                        .cat-title Ролл Филадельфия
-                .col-md-3.card_group_food
-                    a(href="#" class="cat-link")
-                        .min_logo_rest
-                            img(class="group_food_logo" src="img/logo_rest/logo-kosmos.png", alt="Суши Бар Космос - Доставка еды из ресторанов")
-                        .catImg.tagSushi
-                            img(class="sushi-img" src="img/kamikaze-roll.jpg", alt="Ролл Камикадзе")
-                        .cat-title Ролл Камикадзе    
-            .row
-                .col-md-3.card_group_food
-                    a(href="#" class="cat-link")
-                        .min_logo_rest
-                            img(class="group_food_logo" src="img/logo_rest/logo-irish-pub.png", alt="Irish Pub - Доставка еды из ресторанов")
-                        .catImg.tagSushi    
-                            img(class="sushi-img" src="img/masago-sushi.jpg", alt="Масаго суши")
-                        .cat-title Масаго Суши
-                .col-md-3.card_group_food
-                    a(href="#" class="cat-link")
-                        .min_logo_rest
-                            img(class="group_food_logo" src="img/logo_rest/logo-mister.png", alt="Мистер Сендвич - Доставка еды из ресторанов")
-                        .catImg.tagSushi
-                            img(src="img/teka-maki-roll.jpg", alt="Ролл Тека Маки")
-                        .cat-title Ролл Тека Маки
-                .col-md-3.card_group_food
-                    a(href="#" class="cat-link")
-                        .min_logo_rest
-                            img(class="group_food_logo" src="img/logo_rest/logo-mister.png", alt="Мистер Сендвич - Доставка еды из ресторанов")
-                        .catImg.tagSushi
-                            img(class="sushi-img" src="img/tori-kunsei-roll.jpg", alt="Ролл Тори Кунсей")
-                        .cat-title Ролл Тори Кунсей
-                .col-md-3.card_group_food
-                    a(href="#" class="cat-link")
-                        .card_group_food_all.catImg
-                            .title 
-                                span Все суши
-                                br 
-                                | ресторанов
-                             
+            p PC version        
+            .cat_carousel_container        
+                .cat_carousel
+                    .col-md-3.col-sm-3.card_group_food
+                        a(href="#" class="cat-link")
+                            .min_logo_rest
+                                img(class="group_food_logo" src="img/logo_rest/logo-irish-pub.png", alt="Irish Pub - Доставка еды из ресторанов")
+                            .catImg.tagSushi    
+                                img(class="sushi-img" src="img/masago-sushi.jpg", alt="Масаго суши")
+                            .cat-title Масаго Суши
+                        a(href="#" class="cat-link")
+                            .min_logo_rest
+                                img(class="group_food_logo" src="img/logo_rest/logo-mister.png", alt="Мистер Сендвич - Доставка еды из ресторанов")
+                            .catImg.tagSushi
+                                img(src="img/teka-maki-roll.jpg", alt="Ролл Тека Маки")
+                            .cat-title Ролл Тека Маки
+                    .col-md-3.col-sm-3.card_group_food
+                        a(href="#" class="cat-link")
+                            .min_logo_rest
+                                img(class="group_food_logo" src="img/logo_rest/logo-kami.png", alt="Ками - Доставка еды из ресторанов")
+                            .catImg.tagSushi
+                                img(class="sushi-img" src="img/california-roll1.jpg", alt="Ролл Калифорния")
+                            .cat-title Ролл Калифорния
+                        a(href="#" class="cat-link")
+                            .min_logo_rest
+                                img(class="group_food_logo" src="img/logo_rest/logo-kami.png", alt="Ками - Доставка еды из ресторанов")
+                            .catImg.tagSushi
+                                img(class="sushi-img" src="img/california-roll2.jpg", alt="Ролл Калифорния")
+                            .cat-title Ролл Калифорния 
+                    .col-md-3.col-sm-3.card_group_food
+                        a(href="#" class="cat-link")
+                            .min_logo_rest
+                                img(class="group_food_logo" src="img/logo_rest/logo-kosmos.png", alt="Суши Бар Космос - Доставка еды из ресторанов")
+                            .catImg.tagSushi
+                                img(class="sushi-img" src="img/philadelfia-roll.jpg", alt="Ролл Филадельфия")
+                            .cat-title Ролл Филадельфия
+                        a(href="#" class="cat-link")
+                            .min_logo_rest
+                                img(class="group_food_logo" src="img/logo_rest/logo-kosmos.png", alt="Суши Бар Космос - Доставка еды из ресторанов")
+                            .catImg.tagSushi
+                                img(class="sushi-img" src="img/kamikaze-roll.jpg", alt="Ролл Камикадзе")
+                            .cat-title Ролл Камикадзе    
+                    .col-md-3.col-sm-3.card_group_food
+                        a(href="#" class="cat-link")
+                            .min_logo_rest
+                                img(class="group_food_logo" src="img/logo_rest/logo-irish-pub.png", alt="Irish Pub - Доставка еды из ресторанов")
+                            .catImg.tagSushi    
+                                img(class="sushi-img" src="img/masago-sushi.jpg", alt="Масаго суши")
+                            .cat-title Масаго Суши
+                        a(href="#" class="cat-link")
+                            .min_logo_rest
+                                img(class="group_food_logo" src="img/logo_rest/logo-mister.png", alt="Мистер Сендвич - Доставка еды из ресторанов")
+                            .catImg.tagSushi
+                                img(src="img/teka-maki-roll.jpg", alt="Ролл Тека Маки")
+                            .cat-title Ролл Тека Маки
+                    .col-md-3.col-sm-3.card_group_food
+                        a(href="#" class="cat-link")
+                            .min_logo_rest
+                                img(class="group_food_logo" src="img/logo_rest/logo-irish-pub.png", alt="Irish Pub - Доставка еды из ресторанов")
+                            .catImg.tagSushi    
+                                img(class="sushi-img" src="img/masago-sushi.jpg", alt="Масаго суши")
+                            .cat-title Масаго Суши
+                        a(href="#" class="cat-link")
+                            .min_logo_rest
+                                img(class="group_food_logo" src="img/logo_rest/logo-mister.png", alt="Мистер Сендвич - Доставка еды из ресторанов")
+                            .catImg.tagSushi
+                                img(src="img/teka-maki-roll.jpg", alt="Ролл Тека Маки")
+                            .cat-title Ролл Тека Маки
+                    .col-md-3.col-sm-3.card_group_food
+                        a(href="#" class="cat-link")
+                            .min_logo_rest
+                                img(class="group_food_logo" src="img/logo_rest/logo-kami.png", alt="Ками - Доставка еды из ресторанов")
+                            .catImg.tagSushi
+                                img(class="sushi-img" src="img/california-roll1.jpg", alt="Ролл Калифорния")
+                            .cat-title Ролл Калифорния
+                        a(href="#" class="cat-link")
+                            .min_logo_rest
+                                img(class="group_food_logo" src="img/logo_rest/logo-kami.png", alt="Ками - Доставка еды из ресторанов")
+                            .catImg.tagSushi
+                                img(class="sushi-img" src="img/california-roll2.jpg", alt="Ролл Калифорния")
+                            .cat-title Ролл Калифорния 
+                    .col-md-3.col-sm-3.card_group_food
+                        a(href="#" class="cat-link")
+                            .min_logo_rest
+                                img(class="group_food_logo" src="img/logo_rest/logo-kosmos.png", alt="Суши Бар Космос - Доставка еды из ресторанов")
+                            .catImg.tagSushi
+                                img(class="sushi-img" src="img/philadelfia-roll.jpg", alt="Ролл Филадельфия")
+                            .cat-title Ролл Филадельфия
+                        a(href="#" class="cat-link")
+                            .min_logo_rest
+                                img(class="group_food_logo" src="img/logo_rest/logo-kosmos.png", alt="Суши Бар Космос - Доставка еды из ресторанов")
+                            .catImg.tagSushi
+                                img(class="sushi-img" src="img/kamikaze-roll.jpg", alt="Ролл Камикадзе")
+                            .cat-title Ролл Камикадзе         
+                    .col-md-3.col-sm-3.card_group_food
+                        a(href="#" class="cat-link")
+                            .min_logo_rest
+                                img(class="group_food_logo" src="img/logo_rest/logo-mister.png", alt="Мистер Сендвич - Доставка еды из ресторанов")
+                            .catImg.tagSushi
+                                img(class="sushi-img" src="img/tori-kunsei-roll.jpg", alt="Ролл Тори Кунсей")
+                            .cat-title Ролл Тори Кунсей
+                        a(href="#" class="cat-link")
+                            .card_group_food_all.catImg
+                                .title 
+                                    span Все суши
+                                    br 
+                                    | ресторанов 
         .new-rest-group
             //- Новые рестораны
             .new-rest-group-title
@@ -127,100 +195,101 @@ block content
                     a.sushi-all Все (12)
                     a.arrow.left-group
                     a.arrow.right-group 
-            .row
-                .col-md-4.card_group_food.not-hidden
-                    a(href="#" class="cat-link ")
-                        .min_logo_rest
-                            img(class="group_food_logo" src="img/logo_rest/logo-faina-music-pub.png", alt="Файна Мьюзик Паб")
-                        .rest-img-group
-                            img(src="img/faina-music-img.jpg", alt="Файна Мьюзик Паб")
-                            //- SVG Circle Chart
-                        .delivery-terms
-                            svg(class="progress-ring" viewbox="0 0 68 68" width="68" height="68" xmlns="http://www.w3.org/2000/svg")
-                                circle(class="progress-ring__background" cx="34"  cy="34" r="34" fill="#ffffff")
-                                circle(class="progress-ring__background-stoke"  stroke="#DADADA" stroke-width="4" cx="34" cy="34" r="30" fill="transparent")
-                                circle(class="progress-ring__circle" stroke="#5DDFD6" stroke-width="4" cx="34" cy="34" r="30"  fill="transparent")
-                                g(class="circle-chart__info")
-                                    text(class="circle-chart__minutes" x="34" y="28" alignment-baseline="central" text-anchor="middle") 30
-                                    text(class="circle-chart__subline" x="34" y="44" alignment-baseline="central" text-anchor="middle" ) мин
-                            //- SVG Circle Chart End
-                        h3.rest-title Файна Мьюзик Паб
-                        p.working-hours
-                            +svg('watch', 12, 12)
-                            span 09:00 - 22:00     
-                        .new-rest-about  
-                            .rest-about-text
-                                +svg('flatware', 18, 18)
-                                span Кофейня, Пирожковая
-                            .rest-about-money 
-                                span &#8372
-                                span &#8372
-                                span &#8372
-                            .rest-about-rating 
-                                +svg('smile', 22, 22)
-                                span 7.8              
-                .col-md-4.card_group_food.not-hidden
-                    a(href="#" class="cat-link")
-                        .min_logo_rest
-                            img(class="group_food_logo" src="img/logo_rest/logo-faina-music-pub.png", alt="Файна Мьюзик Паб")
-                        .rest-img-group
-                            img(src="img/faina-music-img.jpg", alt="Файна Мьюзик Паб")
-                            //- SVG Circle Chart
-                        .delivery-terms
-                            svg(class="progress-ring" viewbox="0 0 68 68" width="68" height="68" xmlns="http://www.w3.org/2000/svg")
-                                circle(class="progress-ring__background" cx="34"  cy="34" r="34" fill="#ffffff")
-                                circle(class="progress-ring__background-stoke"  stroke="#DADADA" stroke-width="4" cx="34" cy="34" r="30" fill="transparent")
-                                circle(class="progress-ring__circle" stroke="#5DDFD6" stroke-width="4" cx="34" cy="34" r="30"  fill="transparent")
-                                g(class="circle-chart__info")
-                                    text(class="circle-chart__minutes" x="34" y="28" alignment-baseline="central" text-anchor="middle") 46
-                                    text(class="circle-chart__subline" x="34" y="44" alignment-baseline="central" text-anchor="middle" ) мин
-                            //- SVG Circle Chart End
-                        h3.rest-title Файна Мьюзик Паб
-                        p.working-hours
-                            +svg('watch', 12, 12)
-                            span 09:00 - 22:00     
-                        .new-rest-about    
-                            .rest-about-text
-                                +svg('flatware', 18, 18)
-                                span Кофейня, Пирожковая
-                            .rest-about-money 
-                                span &#8372
-                                span &#8372
-                                span &#8372
-                            .rest-about-rating 
-                                +svg('smile', 22, 22)
-                                span 9.2          
-                .col-md-4.card_group_food.not-hidden
-                    a(href="#" class="cat-link")
-                        .min_logo_rest
-                            img(class="group_food_logo" src="img/logo_rest/logo-faina-music-pub.png", alt="Файна Мьюзик Паб")
-                        .rest-img-group
-                            img(src="img/faina-music-img.jpg", alt="Файна Мьюзик Паб")
-                            //- SVG Circle Chart
-                        .delivery-terms
-                            svg(class="progress-ring" viewbox="0 0 68 68" width="68" height="68" xmlns="http://www.w3.org/2000/svg")
-                                circle(class="progress-ring__background" cx="34"  cy="34" r="34" fill="#ffffff")
-                                circle(class="progress-ring__background-stoke"  stroke="#DADADA" stroke-width="4" cx="34" cy="34" r="30" fill="transparent")
-                                circle(class="progress-ring__circle" stroke="#5DDFD6" stroke-width="4" cx="34" cy="34" r="30"  fill="transparent")
-                                g(class="circle-chart__info")
-                                    text(class="circle-chart__minutes" x="34" y="28" alignment-baseline="central" text-anchor="middle") 22
-                                    text(class="circle-chart__subline" x="34" y="44" alignment-baseline="central" text-anchor="middle" ) мин
-                            //- SVG Circle Chart End
-                        h3.rest-title Файна Мьюзик Паб
-                        p.working-hours
-                            +svg('watch', 12, 12)
-                            span 09:00 - 22:00                               
-                        .new-rest-about
-                            .rest-about-text 
-                                +svg('flatware', 18, 18)
-                                span Кофейня, Пирожковая
-                            .rest-about-money 
-                                span &#8372
-                                span &#8372
-                                span &#8372
-                            .rest-about-rating 
-                                +svg('smile', 22, 22)
-                                span 7.8    
+            .cat_carousel_container        
+                .cat_carousel
+                    .col-sm-4.card_group_food.not-hidden
+                        a(href="#" class="cat-link ")
+                            .min_logo_rest
+                                img(class="group_food_logo" src="img/logo_rest/logo-faina-music-pub.png", alt="Файна Мьюзик Паб")
+                            .rest-img-group
+                                img(src="img/faina-music-img.jpg", alt="Файна Мьюзик Паб")
+                                //- SVG Circle Chart
+                            .delivery-terms
+                                svg(class="progress-ring" viewbox="0 0 68 68" width="68" height="68" xmlns="http://www.w3.org/2000/svg")
+                                    circle(class="progress-ring__background" cx="34"  cy="34" r="34" fill="#ffffff")
+                                    circle(class="progress-ring__background-stoke"  stroke="#DADADA" stroke-width="4" cx="34" cy="34" r="30" fill="transparent")
+                                    circle(class="progress-ring__circle" stroke="#5DDFD6" stroke-width="4" cx="34" cy="34" r="30"  fill="transparent")
+                                    g(class="circle-chart__info")
+                                        text(class="circle-chart__minutes" x="34" y="28" alignment-baseline="central" text-anchor="middle") 30
+                                        text(class="circle-chart__subline" x="34" y="44" alignment-baseline="central" text-anchor="middle" ) мин
+                                //- SVG Circle Chart End
+                            h3.rest-title Файна Мьюзик Паб
+                            p.working-hours
+                                +svg('watch', 12, 12)
+                                span 09:00 - 22:00     
+                            .new-rest-about  
+                                .rest-about-text
+                                    +svg('flatware', 18, 18)
+                                    span Кофейня, Пирожковая
+                                .rest-about-money 
+                                    span &#8372
+                                    span &#8372
+                                    span &#8372
+                                .rest-about-rating 
+                                    +svg('smile', 22, 22)
+                                    span 7.8              
+                    .col-sm-4.card_group_food.not-hidden
+                        a(href="#" class="cat-link")
+                            .min_logo_rest
+                                img(class="group_food_logo" src="img/logo_rest/logo-faina-music-pub.png", alt="Файна Мьюзик Паб")
+                            .rest-img-group
+                                img(src="img/faina-music-img.jpg", alt="Файна Мьюзик Паб")
+                                //- SVG Circle Chart
+                            .delivery-terms
+                                svg(class="progress-ring" viewbox="0 0 68 68" width="68" height="68" xmlns="http://www.w3.org/2000/svg")
+                                    circle(class="progress-ring__background" cx="34"  cy="34" r="34" fill="#ffffff")
+                                    circle(class="progress-ring__background-stoke"  stroke="#DADADA" stroke-width="4" cx="34" cy="34" r="30" fill="transparent")
+                                    circle(class="progress-ring__circle" stroke="#5DDFD6" stroke-width="4" cx="34" cy="34" r="30"  fill="transparent")
+                                    g(class="circle-chart__info")
+                                        text(class="circle-chart__minutes" x="34" y="28" alignment-baseline="central" text-anchor="middle") 46
+                                        text(class="circle-chart__subline" x="34" y="44" alignment-baseline="central" text-anchor="middle" ) мин
+                                //- SVG Circle Chart End
+                            h3.rest-title Файна Мьюзик Паб
+                            p.working-hours
+                                +svg('watch', 12, 12)
+                                span 09:00 - 22:00     
+                            .new-rest-about    
+                                .rest-about-text
+                                    +svg('flatware', 18, 18)
+                                    span Кофейня, Пирожковая
+                                .rest-about-money 
+                                    span &#8372
+                                    span &#8372
+                                    span &#8372
+                                .rest-about-rating 
+                                    +svg('smile', 22, 22)
+                                    span 9.2          
+                    .col-sm-4.card_group_food.not-hidden
+                        a(href="#" class="cat-link")
+                            .min_logo_rest
+                                img(class="group_food_logo" src="img/logo_rest/logo-faina-music-pub.png", alt="Файна Мьюзик Паб")
+                            .rest-img-group
+                                img(src="img/faina-music-img.jpg", alt="Файна Мьюзик Паб")
+                                //- SVG Circle Chart
+                            .delivery-terms
+                                svg(class="progress-ring" viewbox="0 0 68 68" width="68" height="68" xmlns="http://www.w3.org/2000/svg")
+                                    circle(class="progress-ring__background" cx="34"  cy="34" r="34" fill="#ffffff")
+                                    circle(class="progress-ring__background-stoke"  stroke="#DADADA" stroke-width="4" cx="34" cy="34" r="30" fill="transparent")
+                                    circle(class="progress-ring__circle" stroke="#5DDFD6" stroke-width="4" cx="34" cy="34" r="30"  fill="transparent")
+                                    g(class="circle-chart__info")
+                                        text(class="circle-chart__minutes" x="34" y="28" alignment-baseline="central" text-anchor="middle") 22
+                                        text(class="circle-chart__subline" x="34" y="44" alignment-baseline="central" text-anchor="middle" ) мин
+                                //- SVG Circle Chart End
+                            h3.rest-title Файна Мьюзик Паб
+                            p.working-hours
+                                +svg('watch', 12, 12)
+                                span 09:00 - 22:00                               
+                            .new-rest-about
+                                .rest-about-text 
+                                    +svg('flatware', 18, 18)
+                                    span Кофейня, Пирожковая
+                                .rest-about-money 
+                                    span &#8372
+                                    span &#8372
+                                    span &#8372
+                                .rest-about-rating 
+                                    +svg('smile', 22, 22)
+                                    span 7.8    
         .popular-now
             //- Популярные сейчас
             .popular-now-title
@@ -229,114 +298,116 @@ block content
                     a.sushi-all Все (12)
                     a.arrow.left-group
                     a.arrow.right-group 
-            .row
-                .col-md-4.card_group_food.not-hidden
-                    a(href="#" class="cat-link")
-                        .min_logo_rest
-                            img(class="group_food_logo" src="img/logo_rest/logo-faina-music-pub.png", alt="Файна Мьюзик Паб")
-                        .rest-img-group
-                            img(src="img/faina-music-img.jpg", alt="Файна Мьюзик Паб")
-                            //- SVG Circle Chart
-                        .delivery-terms
-                            svg(class="progress-ring" viewbox="0 0 68 68" width="68" height="68" xmlns="http://www.w3.org/2000/svg")
-                                circle(class="progress-ring__background" cx="34"  cy="34" r="34" fill="#ffffff")
-                                circle(class="progress-ring__background-stoke"  stroke="#DADADA" stroke-width="4" cx="34" cy="34" r="30" fill="transparent")
-                                circle(class="progress-ring__circle" stroke="#5DDFD6" stroke-width="4" cx="34" cy="34" r="30"  fill="transparent")
-                                g(class="circle-chart__info")
-                                    text(class="circle-chart__minutes" x="34" y="28" alignment-baseline="central" text-anchor="middle") 55
-                                    text(class="circle-chart__subline" x="34" y="44" alignment-baseline="central" text-anchor="middle" ) мин
-                            //- SVG Circle Chart End
-                        h3.rest-title Файна Мьюзик Паб
-                        p.working-hours
-                            +svg('watch', 12, 12)
-                            span 09:00 - 22:00     
-                        .new-rest-about  
-                            .rest-about-text
-                                +svg('flatware', 18, 18)
-                                span Кофейня, Пирожковая
-                            .rest-about-money 
-                                span &#8372
-                                span &#8372
-                                span &#8372
-                            .rest-about-rating 
-                                +svg('smile', 22, 22)
-                                span 7.8              
-                .col-md-4.card_group_food.not-hidden
-                    a(href="#" class="cat-link")
-                        .min_logo_rest
-                            img(class="group_food_logo" src="img/logo_rest/logo-faina-music-pub.png", alt="Файна Мьюзик Паб")
-                        .rest-img-group
-                            img(src="img/faina-music-img.jpg", alt="Файна Мьюзик Паб")
-                            //- SVG Circle Chart
-                        .delivery-terms
-                            svg(class="progress-ring" viewbox="0 0 68 68" width="68" height="68" xmlns="http://www.w3.org/2000/svg")
-                                circle(class="progress-ring__background" cx="34"  cy="34" r="34" fill="#ffffff")
-                                circle(class="progress-ring__background-stoke"  stroke="#DADADA" stroke-width="4" cx="34" cy="34" r="30" fill="transparent")
-                                circle(class="progress-ring__circle" stroke="#5DDFD6" stroke-width="4" cx="34" cy="34" r="30"  fill="transparent")
-                                g(class="circle-chart__info")
-                                    text(class="circle-chart__minutes" x="34" y="28" alignment-baseline="central" text-anchor="middle") 10
-                                    text(class="circle-chart__subline" x="34" y="44" alignment-baseline="central" text-anchor="middle" ) мин
-                            //- SVG Circle Chart End
-                        h3.rest-title Файна Мьюзик Паб
-                        p.working-hours
-                            +svg('watch', 12, 12)
-                            span 09:00 - 22:00     
-                        .new-rest-about    
-                            .rest-about-text
-                                +svg('flatware', 18, 18)
-                                span Кофейня, Пирожковая
-                            .rest-about-money 
-                                span &#8372
-                                span &#8372
-                                span &#8372
-                            .rest-about-rating 
-                                +svg('smile', 22, 22)
-                                span 7.8           
-                .col-md-4.card_group_food.not-hidden
-                    a(href="#" class="cat-link")
-                        .min_logo_rest
-                            img(class="group_food_logo" src="img/logo_rest/logo-faina-music-pub.png", alt="Файна Мьюзик Паб")
-                        .rest-img-group
-                            img(src="img/faina-music-img.jpg", alt="Файна Мьюзик Паб")
-                            //- SVG Circle Chart
-                        .delivery-terms
-                            svg(class="progress-ring" viewbox="0 0 68 68" width="68" height="68" xmlns="http://www.w3.org/2000/svg")
-                                circle(class="progress-ring__background" cx="34"  cy="34" r="34" fill="#ffffff")
-                                circle(class="progress-ring__background-stoke"  stroke="#DADADA" stroke-width="4" cx="34" cy="34" r="30" fill="transparent")
-                                circle(class="progress-ring__circle" stroke="#5DDFD6" stroke-width="4" cx="34" cy="34" r="30"  fill="transparent")
-                                g(class="circle-chart__info")
-                                    text(class="circle-chart__minutes" x="34" y="28" alignment-baseline="central" text-anchor="middle") 49
-                                    text(class="circle-chart__subline" x="34" y="44" alignment-baseline="central" text-anchor="middle" ) мин
-                            //- SVG Circle Chart End
-                        h3.rest-title Файна Мьюзик Паб
-                        p.working-hours
-                            +svg('watch', 12, 12)
-                            span 09:00 - 22:00                               
-                        .new-rest-about
-                            .rest-about-text 
-                                +svg('flatware', 18, 18)
-                                span Кофейня, Пирожковая
-                            .rest-about-money 
-                                span &#8372
-                                span &#8372
-                                span &#8372
-                            .rest-about-rating 
-                                +svg('smile', 22, 22)
-                                span 7.8
-        .near-with-you
+            .cat_carousel_container        
+                .cat_carousel
+                    .col-sm-4.card_group_food.not-hidden
+                        a(href="#" class="cat-link")
+                            .min_logo_rest
+                                img(class="group_food_logo" src="img/logo_rest/logo-faina-music-pub.png", alt="Файна Мьюзик Паб")
+                            .rest-img-group
+                                img(src="img/faina-music-img.jpg", alt="Файна Мьюзик Паб")
+                                //- SVG Circle Chart
+                            .delivery-terms
+                                svg(class="progress-ring" viewbox="0 0 68 68" width="68" height="68" xmlns="http://www.w3.org/2000/svg")
+                                    circle(class="progress-ring__background" cx="34"  cy="34" r="34" fill="#ffffff")
+                                    circle(class="progress-ring__background-stoke"  stroke="#DADADA" stroke-width="4" cx="34" cy="34" r="30" fill="transparent")
+                                    circle(class="progress-ring__circle" stroke="#5DDFD6" stroke-width="4" cx="34" cy="34" r="30"  fill="transparent")
+                                    g(class="circle-chart__info")
+                                        text(class="circle-chart__minutes" x="34" y="28" alignment-baseline="central" text-anchor="middle") 55
+                                        text(class="circle-chart__subline" x="34" y="44" alignment-baseline="central" text-anchor="middle" ) мин
+                                //- SVG Circle Chart End
+                            h3.rest-title Файна Мьюзик Паб
+                            p.working-hours
+                                +svg('watch', 12, 12)
+                                span 09:00 - 22:00     
+                            .new-rest-about  
+                                .rest-about-text
+                                    +svg('flatware', 18, 18)
+                                    span Кофейня, Пирожковая
+                                .rest-about-money 
+                                    span &#8372
+                                    span &#8372
+                                    span &#8372
+                                .rest-about-rating 
+                                    +svg('smile', 22, 22)
+                                    span 7.8              
+                    .col-sm-4.card_group_food.not-hidden
+                        a(href="#" class="cat-link")
+                            .min_logo_rest
+                                img(class="group_food_logo" src="img/logo_rest/logo-faina-music-pub.png", alt="Файна Мьюзик Паб")
+                            .rest-img-group
+                                img(src="img/faina-music-img.jpg", alt="Файна Мьюзик Паб")
+                                //- SVG Circle Chart
+                            .delivery-terms
+                                svg(class="progress-ring" viewbox="0 0 68 68" width="68" height="68" xmlns="http://www.w3.org/2000/svg")
+                                    circle(class="progress-ring__background" cx="34"  cy="34" r="34" fill="#ffffff")
+                                    circle(class="progress-ring__background-stoke"  stroke="#DADADA" stroke-width="4" cx="34" cy="34" r="30" fill="transparent")
+                                    circle(class="progress-ring__circle" stroke="#5DDFD6" stroke-width="4" cx="34" cy="34" r="30"  fill="transparent")
+                                    g(class="circle-chart__info")
+                                        text(class="circle-chart__minutes" x="34" y="28" alignment-baseline="central" text-anchor="middle") 10
+                                        text(class="circle-chart__subline" x="34" y="44" alignment-baseline="central" text-anchor="middle" ) мин
+                                //- SVG Circle Chart End
+                            h3.rest-title Файна Мьюзик Паб
+                            p.working-hours
+                                +svg('watch', 12, 12)
+                                span 09:00 - 22:00     
+                            .new-rest-about    
+                                .rest-about-text
+                                    +svg('flatware', 18, 18)
+                                    span Кофейня, Пирожковая
+                                .rest-about-money 
+                                    span &#8372
+                                    span &#8372
+                                    span &#8372
+                                .rest-about-rating 
+                                    +svg('smile', 22, 22)
+                                    span 7.8           
+                    .col-sm-4.card_group_food.not-hidden
+                        a(href="#" class="cat-link")
+                            .min_logo_rest
+                                img(class="group_food_logo" src="img/logo_rest/logo-faina-music-pub.png", alt="Файна Мьюзик Паб")
+                            .rest-img-group
+                                img(src="img/faina-music-img.jpg", alt="Файна Мьюзик Паб")
+                                //- SVG Circle Chart
+                            .delivery-terms
+                                svg(class="progress-ring" viewbox="0 0 68 68" width="68" height="68" xmlns="http://www.w3.org/2000/svg")
+                                    circle(class="progress-ring__background" cx="34"  cy="34" r="34" fill="#ffffff")
+                                    circle(class="progress-ring__background-stoke"  stroke="#DADADA" stroke-width="4" cx="34" cy="34" r="30" fill="transparent")
+                                    circle(class="progress-ring__circle" stroke="#5DDFD6" stroke-width="4" cx="34" cy="34" r="30"  fill="transparent")
+                                    g(class="circle-chart__info")
+                                        text(class="circle-chart__minutes" x="34" y="28" alignment-baseline="central" text-anchor="middle") 49
+                                        text(class="circle-chart__subline" x="34" y="44" alignment-baseline="central" text-anchor="middle" ) мин
+                                //- SVG Circle Chart End
+                            h3.rest-title Файна Мьюзик Паб
+                            p.working-hours
+                                +svg('watch', 12, 12)
+                                span 09:00 - 22:00                               
+                            .new-rest-about
+                                .rest-about-text 
+                                    +svg('flatware', 18, 18)
+                                    span Кофейня, Пирожковая
+                                .rest-about-money 
+                                    span &#8372
+                                    span &#8372
+                                    span &#8372
+                                .rest-about-rating 
+                                    +svg('smile', 22, 22)
+                                    span 7.8
+        .near-with-you        
             .near-with-you-title
                 h2 Великолепные блюда рядом с вами
-                .row
-                    .col-md-6
-                        .near-item
-                            .near-item-desc
-                                h3 Популярные блюда
-                                p Выбор популярных блюд рядом с вами
-                            img(src="img/popular-dishes.jpg", alt="")
-                    .col-md-6
-                        .near-item
-                            .near-item-desc
-                                h3 Рекомендуется для вас
-                                p Выбор рекомендуемых блюд рядом с вами
-                            img(src="img/recommended.jpg", alt="")
+                .group_carousel_container
+                    .group_carousel
+                        .col-sm-6
+                            .near-item
+                                .near-item-desc
+                                    h3 Популярные блюда
+                                    p Выбор популярных блюд рядом с вами
+                                img(src="img/popular-dishes.jpg", alt="")
+                        .col-sm-6
+                            .near-item
+                                .near-item-desc
+                                    h3 Рекомендуется для вас
+                                    p Выбор рекомендуемых блюд рядом с вами
+                                img(src="img/recommended.jpg", alt="")
         
