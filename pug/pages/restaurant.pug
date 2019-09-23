@@ -5,25 +5,13 @@ block content
     section.restaurant-header
         .container
             .restaurant-header-description
-                .restaurant-logo
-                    .restaurant-logo-img-wrapper
-                        a(href="#")
-                            img(class=".restaurant-logo-img" src="img/logo_rest/logo-faina-music-pub-big.png", alt="Файна Мьюзик Паб Логотип")
-                    .money-sign 
-                        span &#8372
-                        span &#8372
-                        span &#8372
-                .restaurant-description
-                    h1.restaurant-description-title Файна Мьюзик Паб
-                    .restaurant-description-delivery_work
-                        .restaurant-description-hours Открыто сегодня: 
-                            span с 11:00 до 00:00
-                        .restaurant-description-delivery-time Среднее время доставки 
-                            span 30мин
-                    .restaurant-description-rating
-                        +svg('smile', 29.33, 29.33)
-                        span 7.8
-                        button Вкусно
+                .row
+                    .col-md-2
+                        .rest-logo
+                            img(src="img/logo_rest/logo-faina-music-pub-big.png", alt="")
+                    .col-md-3
+                    .col-md-4
+                    .col-md-3
     section.restaurant-page-content
         .container
             .row
