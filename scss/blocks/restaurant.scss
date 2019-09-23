@@ -98,10 +98,22 @@
    
 }
 
-
-
 .restaurant-page-content {
     margin-top: 42px;
+}
+
+.siderbar-search{   
+    width: 140px;
+    margin-bottom: 32px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 8.3px;
+    border: 1px solid #DADADA;
+    border-radius: 3px;
+    &::placeholder {
+        font-size: 15px;
+        color: #5f5f5f;
+    }
 }
 
 .category-hooks {
