@@ -7,10 +7,40 @@ block content
             .row
                 .col-md-2
                     .rest-logo
-                        img(src="img/logo_rest/logo-faina-music-pub-big.png", alt="")
+                        img(src="img/logo_rest/logo-faina-music-pub-big.png", alt="" class="rest-logo-img")
                 .col-md-3
+                    .restaurant-description
+                        h2 Файна Мьюзик Паб
+                        p.working-hours
+                            +svg('watch', 12, 12)
+                            span 09:00 - 22:00     
+                        .new-rest-about  
+                            .rest-about-text
+                                +svg('flatware', 18, 18)
+                                span Кофейня, Пирожковая
+                            .rest-about-money 
+                                span &#8372
+                                span &#8372
+                                span &#8372
                 .col-md-4
+                    .delivery-time 
+                        svg(class="progress-ring" viewbox="0 0 68 68" width="68" height="68" xmlns="http://www.w3.org/2000/svg")
+                            circle(class="progress-ring__background" cx="34"  cy="34" r="34" fill="#ffffff")
+                            circle(class="progress-ring__background-stoke"  stroke="#DADADA" stroke-width="4" cx="34" cy="34" r="30" fill="transparent")
+                            circle(class="progress-ring__circle" stroke="#5DDFD6" stroke-width="4" cx="34" cy="34" r="30"  fill="transparent")
+                            g(class="circle-chart__info")
+                                text(class="circle-chart__minutes" x="34" y="28" alignment-baseline="central" text-anchor="middle") 30
+                                text(class="circle-chart__subline" x="34" y="44" alignment-baseline="central" text-anchor="middle" ) мин
+                        p Среднее время доставки
                 .col-md-3
+                    .rest-description-rate
+                        button.heart-btn
+                            +svg('heart', 24, 23.17)
+                        p.rating
+                            +svg('smile', 29.33, 29.33)
+                            | 9.2 
+                            span из 10
+
     section.restaurant-page-content
         .container
             .row

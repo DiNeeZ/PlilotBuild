@@ -8,19 +8,94 @@
     align-items: flex-end;
 }
 
-// .restaurant-header-description-wrap {
-//     display: flex;
-//     align-items: flex-end;
-// }
 
 .restaurant-header-description {
+    border-radius: 5px;
     background-color: #fff;
     margin-bottom: 30px;
 
-    img {
+    .rest-logo {
+        display: flex;
+        align-items: center;
         width: 140px;
         height: 120px;
+        margin: 20px 0 20px 5px;
+        border: 1px solid #dadada;
+        border-radius: 5px;
+        .rest-logo-img {
+            width: 100%;
+        }
     }
+}
+
+
+.restaurant-description {
+
+    margin-top: 36px;
+
+    h2 {
+        margin: 0;
+        font-size: 20px;
+        font-weight: 500;
+        line-height: 1.14;
+        text-transform: uppercase; 
+        color: #000;
+    }
+
+    .working-hours {
+        
+        margin: 17px 0 16px 0;
+        font-size: 14px;
+        color: #000;
+    }
+
+    .rest-about-text {
+        span {
+            width: 180px;
+        }
+    }
+}
+
+.delivery-time {
+    display: flex;
+    align-items: center;
+    margin-top: 48px;
+    
+    p {
+        width: 122px;
+        margin-left: 20px;
+        font-size: 16px;
+    }
+
+}
+
+.rest-description-rate {
+    display: flex;
+    align-items: center;
+    margin-top: 65px;
+    .heart-btn {
+        margin-right: 34px;
+        background-color: transparent;
+        border: 0;
+        cursor: pointer;
+    }
+    .rating {
+        display: flex;
+        align-items: center;
+        font-size: 26px;
+        font-weight: 700;
+        color: #000;
+
+        svg {
+            margin-right: 10px;
+        }
+        span {
+            font-size: 12px;
+            color: #5F5F5F;
+            padding: 0 0 10px 10px;
+        }
+    }
+   
 }
 
 
