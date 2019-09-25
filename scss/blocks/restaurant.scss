@@ -148,7 +148,8 @@
 }
 
 .rest-menu-bar {
-    display: flex;
+  display: inline-flex;
+  margin-bottom: 40px;
   .bar-nav {
     display: flex;
 
@@ -176,12 +177,54 @@
       }
     }
   }
+  .bar-filter {
+    li {
+      display: inline-block;  
+    }
+
+    a {
+      
+      margin-left: 12px;
+    }
+  }
 }
 
-.bar-filter {
-    display: flex;
-    justify-content: space-between;
-    width: 100%;
+.tooltip {
+  position: relative;
+  &::before {
+    content: attr(title);
+    position: absolute;
+    bottom: calc(100% + 25px);
+    left: 50%;
+    transform: translateX(-50%);
+    // z-index: 2;
+    display: none;
+    padding: 4px 11px;
+    background-color: #fff;
+    font-size: 12px;
+    color: #DA160B;
+    text-align: center;
+    border-radius: 3px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.5)
+  }
+  &::after {
+    content: "";
+    position: absolute;
+    bottom: calc(100% + 15px);
+    left: 50%;
+    transform: translateX(-50%);
+    // z-index: 1;
+    display: none;
+    width: 0;
+    height: 0;
+    border: 5px solid transparent;
+    border-top-color: #fff;
+    
+  }
+  &:hover::before,
+  &:hover::after {
+    display: inline-block;
+  }
 }
 
 .restaurant-main-description {
