@@ -190,28 +190,28 @@
 
     a {
       display: inline-block;
-      width: 24px;
-      height: 24px;
+      width: 1.71rem;
+      height: 1.71rem;
       background-size: cover;
       background-image: url(../img/filter-food-icon.png);
 
       &.meat-filter {
-        background-position: -39px 0;
+        background-position: -2.78rem 0;
       }
       &.natural-filter {
-        background-position: -78px 0;
+        background-position: -5.57rem 0;
       }
       &.healthy-filter {
-        background-position: -117px 0;
+        background-position: -8.36rem 0;
       }
       &.fish-filter {
-        background-position: -156px 0;
+        background-position: -11.14rem 0;
       }
       &.spicy-filter {
-        background-position: -195px 0;
+        background-position: -13.93rem 0;
       }
       &.gluten-free-filter {
-        background-position: -234px 0;
+        background-position: -16.2rem 0;
       }
     }
 
@@ -257,10 +257,91 @@
   margin-bottom: 36px;
   font-size: 16px;
   color: #2c2c2c;
+}
 
-  p {
-    &:first-child {
-      margin-bottom: 16px;
+.restaurant-menu-nav {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+
+  .food-type-title {
+    font-size: 30px;
+    font-weight: 400;
+    text-transform: uppercase;
+    color: #000000;     
+  }
+
+  button {
+    width: 20px;
+    height: 20px;
+    background-color: transparent;
+    border: none;
+    opacity: .5;
+
+    &:focus {
+      outline: none;
+    }
+
+    &:hover {
+      cursor: pointer;
+    }
+
+    &.column-view-btn {
+      background-image: url(../img/column-view.png);
+      background-size: cover;
+      margin-right: 25px;
+    }
+
+    &.table-view-btn {
+      background-image: url(../img/table-view.png);
+      background-size: cover;
+    }
+
+    &.view-btn__active {
+      opacity: 1;
+    }
+  }
+}
+
+.common-type__item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 28px;
+  border-top: 1px solid #dadada;
+  border-bottom: 1px solid #dadada;
+
+
+  .item-description {
+    padding: 20px 31px 85px 67px;
+
+    .item-description__title {
+      margin-bottom: 12px;
+      font-size: 20px;
+      font-weight: 400;
+      color: #000000;
+    }
+
+    .item-description__subtitle {
+      margin-bottom: 12px;
+      font-size: 15px;
+      line-height: 20px;
+    }
+  }
+
+  .item-description__img {
+    // height: 76.238%;
+    width: 37.165%;
+    margin-right: 20px;
+    border-radius: 5px;
+    overflow: hidden;
+
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: contain;
     }
   }
 }
