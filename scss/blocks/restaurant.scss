@@ -183,11 +183,36 @@
   .bar-filter {
 
     li {
-      display: inline-block;  
+      display: inline-flex; 
+      margin-right: 15px;
+      
     }
 
     a {
-      margin-left: 12px;
+      display: inline-block;
+      width: 24px;
+      height: 24px;
+      background-size: cover;
+      background-image: url(../img/filter-food-icon.png);
+
+      &.meat-filter {
+        background-position: -39px 0;
+      }
+      &.natural-filter {
+        background-position: -78px 0;
+      }
+      &.healthy-filter {
+        background-position: -117px 0;
+      }
+      &.fish-filter {
+        background-position: -156px 0;
+      }
+      &.spicy-filter {
+        background-position: -195px 0;
+      }
+      &.gluten-free-filter {
+        background-position: -234px 0;
+      }
     }
 
   }
@@ -205,10 +230,9 @@
     padding: 4px 11px;
     background-color: #fff;
     font-size: 12px;
-    color: #DA160B;
     text-align: center;
     border-radius: 3px;
-    box-shadow: 0 5px 15px rgba(0,0,0,0.5)
+    box-shadow: 0 5px 15px rgba(0,0,0,0.5);
   }
   &::after {
     content: "";
