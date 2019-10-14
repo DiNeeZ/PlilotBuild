@@ -192,8 +192,9 @@
       display: inline-block;
       width: 1.71rem;
       height: 1.71rem;
-      background-size: cover;
       background-image: url(../img/filter-food-icon.png);
+      background-repeat: no-repeat;
+      background-size: cover;
 
       &.meat-filter {
         background-position: -2.78rem 0;
@@ -211,7 +212,7 @@
         background-position: -13.93rem 0;
       }
       &.gluten-free-filter {
-        background-position: -16.2rem 0;
+        background-position: -16.71rem 0;
       }
     }
 
@@ -331,17 +332,27 @@
     }
   }
 
+  .item-description__price {
+    font-size: 28px;
+    color: #5DBEB7;
+    span {
+      font-size: 18px;
+      color: #5f5f5f;
+      padding-left: 5px;
+    }
+  }
+
   .item-description__img {
-    // height: 76.238%;
-    width: 37.165%;
+    height: 67%;
     margin-right: 20px;
+    border: 1px solid #000000;
     border-radius: 5px;
     overflow: hidden;
 
     img {
       width: 100%;
       height: 100%;
-      object-fit: contain;
+      object-fit: cover;
     }
   }
 }
