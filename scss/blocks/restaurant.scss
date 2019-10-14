@@ -323,9 +323,20 @@
   border-top: 1px solid #dadada;
   border-bottom: 1px solid #dadada;
 
+  .plus-icon {
+    margin-left: 23px;
+    margin-bottom: 158px;
+    background-color: transparent;
+    border: none;
+    transition: transform 0.1s linear;
+    &:hover {
+      cursor: pointer;
+      transform: scale(1.1);
+    }
+  }
 
   .item-description {
-    padding: 20px 31px 85px 67px;
+    padding: 20px 31px 85px 21px;
 
     .item-description__title {
       margin-bottom: 12px;

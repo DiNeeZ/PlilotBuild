@@ -97,17 +97,29 @@ block content
                                 .menu-view-type
                                     button.column-view-btn.view-btn__active 
                                     button.table-view-btn
-                            .common-type__item
-                                .item-description
-                                    h4.item-description__title Прошутто и ракета
-                                    p.item-description__subtitle Томатный соус, сыр, прошутто и рукола
-                                    p.item-description__price 120
-                                        span грн.
-                                .item-description__img
-                                    img(src="img/proshutto.jpg", alt="Прошутто и ракета")
-                            .common-type__item
-                            .opened-type_item
-                            .simple-type_item
-                            .simple-type_item
+                            ul.menu-list
+                                li.common-type__item
+                                    button.plus-icon
+                                        +svg('plus-icon', 24, 24)
+                                    .item-description
+                                        h4.item-description__title Прошутто и ракета
+                                        p.item-description__subtitle Томатный соус, сыр, прошутто и рукола
+                                        p.item-description__price 120
+                                            span грн.
+                                    .item-description__img
+                                        img(src="img/proshutto.jpg", alt="Прошутто и ракета")
+                                li.common-type__item
+                                    button.plus-icon
+                                        +svg('plus-icon', 24, 24)
+                                    .item-description
+                                        h4.item-description__title All 'amatriciana
+                                        p.item-description__subtitle Томатный соус, свежая моцарелла, оливковое масло, итальянский бекон, красный лук, пармезан
+                                        p.item-description__price 100
+                                            span грн.
+                                    .item-description__img
+                                        img(src="img/amatriciana.jpg", alt="All amatriciana")
+                                li.opened-type_item
+                                li.simple-type_item
+                                li.simple-type_item
                 .col-md-3
                     .right-sidebar
