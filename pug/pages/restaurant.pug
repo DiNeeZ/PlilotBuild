@@ -119,6 +119,26 @@ block content
                                     .item-description__img
                                         img(src="img/amatriciana.jpg", alt="All amatriciana")
                                 li.opened-type_item
+                                    .opened-img-desc
+                                        img(src="img/hot_vegetarian.jpg", class="opened-type__img" alt="Острый вегетарианский гамбургер для гурманов")
+                                        .opened-type__desc
+                                            .opened-type__container
+                                                h3.opened-type__title Острый вегетарианский гамбургер для гурманов
+                                                p.opened-type__structure Майонез Chipotle, халапеньо, гриль гриль, цуккини, сыр чеддер, картофель хрустящие дольки, оливки, картофель фри
+                                                p.item-description__price 120
+                                                    span грн.
+                                    .opened-type__count 
+                                        .opened-type__container
+                                            .opened-type__count-wrapper
+                                                p Количество: 
+                                                    span 1
+                                                .group-btn
+                                                    button
+                                                        .minus-btn 
+                                                            +svg('minus_blue', 18, 2)
+                                                    button
+                                                        .plus-btn 
+                                                            +svg('plus_blue', 18, 18)
                                 li.simple-type_item
                                 li.simple-type_item
                 .col-md-3
