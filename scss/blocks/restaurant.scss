@@ -181,11 +181,9 @@
     }
   }
   .bar-filter {
-
     li {
-      display: inline-block; 
+      display: inline-block;
       margin-right: 15px;
-      
     }
 
     a {
@@ -197,11 +195,11 @@
       background-size: cover;
 
       &.chiken-filter {
-        color: #FF7043;
+        color: #ff7043;
       }
       &.meat-filter {
         background-position: -39px 0;
-        color: #8B0000;
+        color: #8b0000;
       }
       &.natural-filter {
         background-position: -78px 0;
@@ -209,22 +207,21 @@
       }
       &.healthy-filter {
         background-position: -117px 0;
-        color: #5BCB49;
+        color: #5bcb49;
       }
       &.fish-filter {
         background-position: -156px 0;
-        color: #00A0FF;
+        color: #00a0ff;
       }
       &.spicy-filter {
         background-position: -195px 0;
-        color: #DA160B;
+        color: #da160b;
       }
       &.gluten-free-filter {
         background-position: -234px 0;
-        color:  #5F5F5F;
+        color: #5f5f5f;
       }
     }
-
   }
 }
 
@@ -242,11 +239,11 @@
     font-size: 12px;
     text-align: center;
     border-radius: 3px;
-    box-shadow: 0 5px 15px rgba(0,0,0,0.5);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
   }
   &::after {
     content: "";
-    position: absolute; 
+    position: absolute;
     bottom: calc(100% + 15px);
     left: 50%;
     transform: translateX(-50%);
@@ -255,7 +252,6 @@
     height: 0;
     border: 5px solid transparent;
     border-top-color: #fff;
-    
   }
   &:hover::before,
   &:hover::after {
@@ -280,7 +276,7 @@
     font-size: 30px;
     font-weight: 400;
     text-transform: uppercase;
-    color: #000000;     
+    color: #000000;
   }
 
   button {
@@ -288,7 +284,7 @@
     height: 20px;
     background-color: transparent;
     border: none;
-    opacity: .5;
+    opacity: 0.5;
 
     &:focus {
       outline: none;
@@ -326,7 +322,7 @@
   border-bottom: 1px solid #dadada;
   border-left: 1px solid transparent;
   border-right: 1px solid transparent;
-  transition: all .2s ease-out;
+  transition: all 0.2s ease-out;
   &:hover {
     cursor: pointer;
     border: 1px solid darken($color: #dadada, $amount: 15);
@@ -365,8 +361,6 @@
     }
   }
 
-
-
   .item-description__img {
     width: 16.86rem;
     height: 11rem;
@@ -385,7 +379,7 @@
 
 .item-description__price {
   font-size: 28px;
-  color: #5DBEB7;
+  color: #5dbeb7;
   span {
     font-size: 18px;
     color: #5f5f5f;
@@ -407,7 +401,6 @@
 }
 
 .opened-img-desc {
-  
 }
 
 .opened-type__desc {
@@ -426,7 +419,7 @@
       top: 0;
       left: -24px;
       font-size: 18px;
-      color: #5DBEB7;
+      color: #5dbeb7;
     }
   }
 
@@ -443,7 +436,7 @@
       transform: rotate(45deg);
       font-size: 25px;
       font-weight: 400;
-      color: #5DBEB7;
+      color: #5dbeb7;
     }
   }
 
@@ -463,21 +456,21 @@
   flex-wrap: wrap;
   align-items: center;
   padding: 12px 0;
-  
+
   p {
     font-size: 16px;
     line-height: 20px;
-    color: #5F5F5F;
+    color: #5f5f5f;
   }
 
   button {
     padding: 1px 15px;
     font-size: 28px;
-    color: #5DBEB7;
+    color: #5dbeb7;
     background-color: transparent;
-    border: 1px solid rgba(90, 189, 183, .5);
+    border: 1px solid rgba(90, 189, 183, 0.5);
     border-radius: 5px;
-    transition: border-color .2s ease-out;
+    transition: border-color 0.2s ease-out;
     &:hover {
       cursor: pointer;
       border-color: rgb(90, 189, 183);
@@ -485,3 +478,12 @@
   }
 }
 
+.id-food {
+  color: #000;
+  font-weight: bold;
+}
+.food-info {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 10px;
+}
