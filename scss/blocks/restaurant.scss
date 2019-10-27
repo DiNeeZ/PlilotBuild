@@ -452,12 +452,18 @@
   }
 }
 
+.opened-type__count {
+  border: 1px solid #dadada;
+  margin-top: -1px;
+}
+
 .opened-type__count-wrapper {
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
   align-items: center;
   padding: 12px 0;
+  
   p {
     font-size: 16px;
     line-height: 20px;
@@ -465,16 +471,17 @@
   }
 
   button {
-    width: 48px;
-    height: 36px;
-    font-size: 40px;
+    padding: 1px 15px;
+    font-size: 28px;
     color: #5DBEB7;
     background-color: transparent;
     border: 1px solid rgba(90, 189, 183, .5);
     border-radius: 5px;
-    .minus-btn {
-      margin-top: -50px;
+    transition: border-color .2s ease-out;
+    &:hover {
+      cursor: pointer;
+      border-color: rgb(90, 189, 183);
     }
   }
-
 }
+
