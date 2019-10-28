@@ -1,7 +1,16 @@
 extends ../layout/main
 
 block content
-
+    .wrap-order.header-fixet
+        .flex-column-reverse
+            .header-left
+                p Среднее время доставки 30мин
+            .header-center
+                p Открыто сегодня: 10:00–21:00 
+            .header-right
+                a.order-btn(href="#")
+                    +svg('cart-icon__blue', '19.38', '24')
+                    | Ваш заказ: 379грн
     section.restaurant-header
         .container.restaurant-header-description
             .row
@@ -218,6 +227,3 @@ block content
                             a(href="tel:+381114050900")
                                 span +381114050900
                         a.more-info(href="#") Смотрите больше информации
-                        a.order-btn(href="#")
-                            +svg('cart-icon__blue', '19.38', '24')
-                            | Ваш заказ: 379грн
