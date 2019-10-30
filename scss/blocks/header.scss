@@ -23,6 +23,14 @@
 .nav-search {
     position: relative;
 
+    .header-light {
+        input {
+            &::placeholder {
+                color: #fff;
+            }
+        }
+    }
+
     input {
         width: 160px;
         height: 38px;
@@ -57,6 +65,14 @@
     display: flex;
     justify-content: space-between;
     align-items: flex-end;
+}
+
+.nav-right-list.header-light {
+    .nav-right-item {
+        a {
+            color: #fff;
+        }
+    }
 }
 
 .nav-right-item {
