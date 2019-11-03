@@ -39,10 +39,9 @@ $(document).ready(function(){
   $(window).scroll(function() {    
 		var height = $(window).scrollTop();  
 		if(height  > 74) {
-      $(".wrap-order").css({"top": 0});
-      $(".wrap-order").css({"position": "fixed"});
+      $(".wrap-order").addClass('header-fixed');
+      
 		} else{
-      $(".wrap-order").css({"top": 74});
-			$(".wrap-order").css({"position": "absolute"});
+      $(".wrap-order").removeClass('header-fixed');
 		}
 	});

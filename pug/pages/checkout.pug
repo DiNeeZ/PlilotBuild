@@ -1,0 +1,17 @@
+extends ../layout/main-light
+
+block content
+    section.checkout-header
+        .container
+            h1.checkout-header__title Оплата
+    section.checkout-content
+        .container
+            .checkout-left-column
+                h2.left-title Способ и время доставки
+                form.add-adress
+                    span.adress-icon
+                        +svg('bike-icon', 24, 24)
+                    input(type="text" placeholder="Пожалуйста, добавьте адрес доставки ")
+                    button
+                        +svg('arrow-adress', 15.22, 8)
+            .ckeckout-right-column

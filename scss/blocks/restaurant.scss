@@ -19,9 +19,7 @@
     color: #fff;
   }
 
-  .header-left {}
 
-  .header-center {}
 
   .order-btn {
     color: #fff;
@@ -33,16 +31,21 @@
   }
 }
 
-.header-fixet {
+.header-fixed {
+  position: fixed;
+  top: 0;
   background-color: #fff;
+  transition: background-color .2s linear;
 
   p {
     color: #5F5F5F;
+    transition: all .2s linear;
   }
 
   .order-btn {
     color: #5F5F5F;
     border: 2px solid #5DBEB7;
+    transition: all .2s linear;
 
     &:hover {
       border-color: lighten($color: #5DBEB7, $amount: 10);
