@@ -13,5 +13,70 @@ block content
                         +svg('bike-icon', 24, 24)
                     input(type="text" placeholder="Пожалуйста, добавьте адрес доставки ")
                     button
-                        +svg('arrow-adress', 15.22, 8)
+                        +svg('arrow-adress', 9.915, 19.83)
+                h2.cheked-dishes-title Выбранные блюда
+                .opened-type_item
+                    .opened-img-desc.separated
+                        img(src="img/burger-image.jpg", class="opened-type__img" alt="Острый вегетарианский гамбургер для гурманов")
+                        .opened-type__desc
+                            .opened-type__container
+                                h3.opened-type__title Острый вегетарианский гамбургер для гурманов
+                                p.opened-type__structure Майонез Chipotle, халапеньо, гриль гриль, цуккини, сыр чеддер, картофель хрустящие дольки, оливки, картофель фри
+                                .food-info
+                                    .product-units 590 г., 1 шт.
+                                    .id-food ID: 000001
+                                p.item-description__price 120
+                                    span грн.
+                    .opened-type__count 
+                        .opened-type__container
+                            .opened-type__count-wrapper
+                                p Количество: 
+                                    span 1
+                                .group-btn
+                                    button.minus-btn 
+                                        +svg('minus_blue', '18', '2')
+                                    button.plus-btn 
+                                        +svg('plus_blue', '18', '18')
+                    .add-to-dish
+                        .opened-type__container
+                            .add-to-dish__wrapper
+                                p.add-to-dish__title Соусы
+                                p.add-to-dish__subtitle Выберите до 5 дополнительных предметов
+                    .add-item-counter
+                        .opened-type__container
+                            .add-item-line
+                                .add-item__icon-name
+                                    .add-item__icon-fill
+                                        span 2
+                                        |x
+                                    p.add-item__name Пряный соус 105 мл 
+                                .add-item__numbers
+                                    .group-btn
+                                        button.minus-btn 
+                                            +svg('minus_blue', '9', '2')
+                                        button.plus-btn 
+                                            +svg('plus_blue', '12', '12')
+                                    p.add-item__num +10
+                            .add-item-line
+                                .add-item__icon-name
+                                    .add-item__icon
+                                    p.add-item__name Пряный соус 210 мл 
+                                .add-item__numbers
+                                    .group-btn
+                                        button.minus-btn 
+                                            +svg('minus_blue', '9', '2')
+                                        button.plus-btn 
+                                            +svg('plus_blue', '12', '12')
+                                    p.add-item__num +15
+                            .add-item-line
+                                .add-item__icon-name
+                                    .add-item__icon
+                                    p.add-item__name Пряный соус 320 мл 
+                                .add-item__numbers
+                                    .group-btn
+                                        button.minus-btn 
+                                            +svg('minus_blue', '9', '2')
+                                        button.plus-btn 
+                                            +svg('plus_blue', '12', '12')
+                                    p.add-item__num +20
             .ckeckout-right-column

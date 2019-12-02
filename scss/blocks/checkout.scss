@@ -57,7 +57,29 @@
         }
         button {
             margin-right: 24px;
+            background-color: transparent;
+            border: none;
+            &:hover {
+                cursor: pointer;
+            }
         }
+    }
+
+    .cheked-dishes-title {
+        margin: 44px 0;
+    }
+
+    .opened-img-desc.separated {
+        margin-bottom: 17px;
+
+        .opened-type__img {
+            border-radius: 0;
+        }
+
+        .opened-type__desc {
+            border-radius: 0 0 5px 5px;
+        }
+
     }
 }
 
