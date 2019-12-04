@@ -1,88 +1,122 @@
 .checkout-header {
-    display: flex;
-    align-items: flex-end;
-    margin-bottom: 50px;
-    min-height: 31.25vh;
-    background-image: url("../img/faina-header-bg.jpg");
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: top right;
-    
-    .checkout-header__title {
-        font-size: 48px;
-        font-weight: 400;
-        padding-bottom: 20px;
-        color: #ffffff;
-    }
+  display: flex;
+  align-items: flex-end;
+  margin-bottom: 50px;
+  min-height: 31.25vh;
+  background-image: url("../img/faina-header-bg.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: top right;
+
+  .checkout-header__title {
+    font-size: 48px;
+    font-weight: 400;
+    padding-bottom: 20px;
+    color: #ffffff;
+  }
 }
 
 .checkout-content {
-    display: flex;
-    justify-content: space-between;
+  display: flex;
+  justify-content: space-between;
 }
 
 .checkout-left-column {
-    width: 52.7%;
-    .left-title {
-        margin: 0;
-        padding: 10px 0 30px 0;
-        font-size: 28px;
-        font-weight: 500;
-        line-height: 33px;
-        color: #000000;
+  width: 52.7%;
+  .left-title {
+    margin: 0;
+    padding: 10px 0 30px 0;
+    font-size: 28px;
+    font-weight: 500;
+    line-height: 33px;
+    color: #000000;
+  }
+  .add-adress {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    border: 1px solid #a6a6a6;
+    border-radius: 4px;
+    .adress-icon {
+      margin-left: 30px;
     }
-    .add-adress {
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-        width: 100%;
-        border: 1px solid #A6A6A6;
-        border-radius: 4px;
-        .adress-icon {
-            margin-left: 30px;
-        }
-        input {
-            padding: 21px 0;
-            border: none;
-            width: 75%;
-            color: #5f5f5f;
-            &::placeholder {
-                font-size: 14px;
-                line-height: 20px;
-                color: #5f5f5f;
-            }
-            &:focus {
-                outline: none;
-            }
-        }
-        button {
-            margin-right: 24px;
-            background-color: transparent;
-            border: none;
-            &:hover {
-                cursor: pointer;
-            }
-        }
+    input {
+      padding: 21px 0;
+      border: none;
+      width: 75%;
+      color: #5f5f5f;
+      &::placeholder {
+        font-size: 14px;
+        line-height: 20px;
+        color: #5f5f5f;
+      }
+      &:focus {
+        outline: none;
+      }
+    }
+    button {
+      margin-right: 24px;
+      background-color: transparent;
+      border: none;
+      &:hover {
+        cursor: pointer;
+      }
+    }
+  }
+
+  .cheked-dishes-title {
+    margin: 44px 0;
+  }
+
+  .opened-img-desc.separated {
+    margin-bottom: 17px;
+
+    .opened-type__img {
+      border-radius: 0;
     }
 
-    .cheked-dishes-title {
-        margin: 44px 0;
+    .opened-type__desc {
+      border-radius: 0 0 5px 5px;
+      position: relative;
+      &::before {
+        content: "";
+        position: absolute;
+        top: 13.6%;
+        left: 0;
+        height: 72.79%;
+        border-left: 4px solid #5dbeb7;
+      }
+    }
+  }
+}
+
+.add-more {
+  display: inline-flex;
+  margin: 33px 0 45px 24px;
+  font-size: 20px;
+
+  &:hover {
+    cursor: pointer;
+    .add-more-btn {
+      cursor: pointer;
     }
 
-    .opened-img-desc.separated {
-        margin-bottom: 17px;
-
-        .opened-type__img {
-            border-radius: 0;
-        }
-
-        .opened-type__desc {
-            border-radius: 0 0 5px 5px;
-        }
-
+    .add-more-icon {
+      transition: transform 0.1s linear;
+      &:hover {
+        transform: scale(1.1);
+      }
     }
+  }
+
+  .add-more-btn {
+    padding-left: 17px;
+    background-color: transparent;
+    border: 0;
+  }
 }
 
 .checkout-right-column {
-    width: 36%;
+  width: 36%;
 }
